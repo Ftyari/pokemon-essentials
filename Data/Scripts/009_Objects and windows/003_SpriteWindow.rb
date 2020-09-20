@@ -1,7 +1,7 @@
 module MessageConfig
   FontName        = "Power Green"
   # in Graphics/Windowskins/ (specify empty string to use the default windowskin)
-  TextSkinName    = "speech hgss 1"
+  TextSkinName    = "speech arc 1"
   ChoiceSkinName  = "choice 1"
   WindowOpacity   = 255
   TextSpeed       = nil   # can be positive to wait frames or negative to
@@ -295,8 +295,8 @@ def getSkinColor(windowskin,color,isDarkSkin)
      windowskin.width!=128 || windowskin.height!=128
     # Base color, shadow color (these are reversed on dark windowskins)
     textcolors = [
-       "0070F8","78B8E8",   # 1  Blue
-       "E82010","F8A8B8",   # 2  Red
+       "2666E5","99B8F6",   # 1  Blue
+       "E62828","F69999",   # 2  Red
        "60B048","B0D090",   # 3  Green
        "48D8D8","A8E0E0",   # 4  Cyan
        "D038B8","E8A0E0",   # 5  Magenta

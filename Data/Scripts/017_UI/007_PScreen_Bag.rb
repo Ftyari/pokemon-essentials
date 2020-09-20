@@ -124,12 +124,12 @@ end
 # Bag visuals
 #===============================================================================
 class PokemonBag_Scene
-  ITEMLISTBASECOLOR     = Color.new(88,88,80)
-  ITEMLISTSHADOWCOLOR   = Color.new(168,184,184)
-  ITEMTEXTBASECOLOR     = Color.new(248,248,248)
-  ITEMTEXTSHADOWCOLOR   = Color.new(0,0,0)
-  POCKETNAMEBASECOLOR   = Color.new(88,88,80)
-  POCKETNAMESHADOWCOLOR = Color.new(168,184,184)
+  ITEMLISTBASECOLOR     = Color.new(240,240,240)
+  ITEMLISTSHADOWCOLOR   = Color.new(120,120,120)
+  ITEMTEXTBASECOLOR     = Color.new(240,240,240)
+  ITEMTEXTSHADOWCOLOR   = Color.new(120,120,120)
+  POCKETNAMEBASECOLOR   = Color.new(240,240,240)
+  POCKETNAMESHADOWCOLOR = Color.new(120,120,120)
   ITEMSVISIBLE          = 7
 
   def pbUpdate
