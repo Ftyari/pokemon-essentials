@@ -20,7 +20,7 @@ class PokemonPartyConfirmCancelSprite < SpriteWrapper
     @overlaysprite.z = self.z+1
     pbSetSystemFont(@overlaysprite.bitmap)
     @yoffset = 8
-    textpos = [[text,56,(narrowbox) ? 2 : 8,2,Color.new(240,240,240),Color.new(120,120,120)]]
+    textpos = [[text,56,(narrowbox) ? 2 : 8,2,Color.new(248,248,248),Color.new(40,40,40)]]
     pbDrawTextPositions(@overlaysprite.bitmap,textpos)
     self.x = x
     self.y = y
@@ -348,8 +348,8 @@ class PokemonPartyPanel < SpriteWrapper
     if @refreshBitmap
       @refreshBitmap = false
       @overlaysprite.bitmap.clear if @overlaysprite.bitmap
-      basecolor   = Color.new(240,240,240)
-      shadowcolor = Color.new(120,120,120)
+      basecolor   = Color.new(248,248,248)
+      shadowcolor = Color.new(40,40,40)
       pbSetSystemFont(@overlaysprite.bitmap)
       textpos = []
       # Draw Pokémon name

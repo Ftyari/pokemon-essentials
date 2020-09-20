@@ -47,19 +47,26 @@ end
 #===============================================================================
 $SpeechFrames = [
   MessageConfig::TextSkinName,   # Default: speech hgss 1
-  "speech arc 2",
-  "speech arc 3",
-  "speech arc 4",
-  "speech arc 5",
-  "speech arc 6",
-  "speech arc 7",
-  "speech arc 8",
-  "speech arc 9",
-  "speech arc 10",
-  "speech arc 11",
-  "speech rs",
-  "speech em",
-  "speech frlg"
+  "speech hgss 2",
+  "speech hgss 3",
+  "speech hgss 4",
+  "speech hgss 5",
+  "speech hgss 6",
+  "speech hgss 7",
+  "speech hgss 8",
+  "speech hgss 9",
+  "speech hgss 10",
+  "speech hgss 11",
+  "speech hgss 12",
+  "speech hgss 13",
+  "speech hgss 14",
+  "speech hgss 15",
+  "speech hgss 16",
+  "speech hgss 17",
+  "speech hgss 18",
+  "speech hgss 19",
+  "speech hgss 20",
+  "speech pl 18"
 ]
 
 $TextFrames = [
@@ -70,7 +77,27 @@ $TextFrames = [
   "Graphics/Windowskins/choice 5",
   "Graphics/Windowskins/choice 6",
   "Graphics/Windowskins/choice 7",
-  "Graphics/Windowskins/choice 8"
+  "Graphics/Windowskins/choice 8",
+  "Graphics/Windowskins/choice 9",
+  "Graphics/Windowskins/choice 10",
+  "Graphics/Windowskins/choice 11",
+  "Graphics/Windowskins/choice 12",
+  "Graphics/Windowskins/choice 13",
+  "Graphics/Windowskins/choice 14",
+  "Graphics/Windowskins/choice 15",
+  "Graphics/Windowskins/choice 16",
+  "Graphics/Windowskins/choice 17",
+  "Graphics/Windowskins/choice 18",
+  "Graphics/Windowskins/choice 19",
+  "Graphics/Windowskins/choice 20",
+  "Graphics/Windowskins/choice 21",
+  "Graphics/Windowskins/choice 22",
+  "Graphics/Windowskins/choice 23",
+  "Graphics/Windowskins/choice 24",
+  "Graphics/Windowskins/choice 25",
+  "Graphics/Windowskins/choice 26",
+  "Graphics/Windowskins/choice 27",
+  "Graphics/Windowskins/choice 28"
 ]
 
 $VersionStyles = [

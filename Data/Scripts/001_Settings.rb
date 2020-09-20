@@ -171,8 +171,8 @@ def pbPocketNames; return ["",
   _INTL("Poké Balls"),
   _INTL("TMs & HMs"),
   _INTL("Berries"),
+  _INTL("Mail"),
   _INTL("Gems & Relics"),
-  _INTL("Battle Items"),
   _INTL("Key Items")
 ]; end
 BAG_MAX_POCKET_SIZE  = [0, -1, -1, -1, -1, -1, -1, -1, -1]

@@ -253,8 +253,8 @@ def pbPlayDecisionSE
   elsif $data_system && $data_system.respond_to?("sounds") &&
      $data_system.sounds && $data_system.sounds[1] && $data_system.sounds[1].name!=""
     pbSEPlay($data_system.sounds[1])
-  elsif FileTest.audio_exist?("Audio/SE/GUI sel choose")
-    pbSEPlay("GUI sel choose",80)
+  elsif FileTest.audio_exist?("Audio/SE/GUI sel decision")
+    pbSEPlay("GUI sel decision",80)
   end
 end
 

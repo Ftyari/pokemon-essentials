@@ -12,8 +12,8 @@ class PokemonDataBox < SpriteWrapper
   # Maximum time in seconds to make a change to the HP bar.
   HP_BAR_CHANGE_TIME = 1.0
   STATUS_ICON_HEIGHT = 16
-  NAME_BASE_COLOR         = Color.new(240,240,240)
-  NAME_SHADOW_COLOR       = Color.new(120,120,120)
+  NAME_BASE_COLOR         = Color.new(72,72,72)
+  NAME_SHADOW_COLOR       = Color.new(184,184,184)
   MALE_BASE_COLOR         = Color.new(48,96,216)
   MALE_SHADOW_COLOR       = NAME_SHADOW_COLOR
   FEMALE_BASE_COLOR       = Color.new(248,88,40)
@@ -242,13 +242,13 @@ class PokemonDataBox < SpriteWrapper
     end
     # Draw owned icon (foe Pokémon only)
     if @battler.owned? && @battler.opposes?(0)
-      imagePos.push(["Graphics/Pictures/Battle/icon_own",@spriteBaseX+206,15])
+      imagePos.push(["Graphics/Pictures/Battle/icon_own",@spriteBaseX+8,36])
     end
     # Draw status icon
     if @battler.status>0
       s = @battler.status
       s = 6 if s==PBStatuses::POISON && @battler.statusCount>0   # Badly poisoned
-      imagePos.push(["Graphics/Pictures/Battle/icon_statuses",@spriteBaseX+18,38,
+      imagePos.push(["Graphics/Pictures/Battle/icon_statuses",@spriteBaseX+24,36,
          0,(s-1)*STATUS_ICON_HEIGHT,-1,STATUS_ICON_HEIGHT])
     end
     pbDrawImagePositions(self.bitmap,imagePos)
