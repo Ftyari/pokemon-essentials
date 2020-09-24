@@ -81,7 +81,7 @@ module PBDayNight
     @cachedTone = Tone.new(0,0,0) if !@cachedTone
     return @cachedTone if !TIME_SHADING
     if !@dayNightToneLastUpdate ||
-       Graphics.frame_count-@dayNightToneLastUpdate>=Graphics.frame_rate*30
+      @dayNightToneLastUpdate!=Graphics.frame_count
       getToneInternal
       @dayNightToneLastUpdate = Graphics.frame_count
     end

@@ -165,6 +165,7 @@ class PokeBattle_Scene
     side = battler.index%2
     pbHideAbilitySplash(battler) if @sprites["abilityBar_#{side}"].visible
     @sprites["abilityBar_#{side}"].battler = battler
+	pbSEPlay("ability activate")
     abilitySplashAnim = AbilitySplashAppearAnimation.new(@sprites,@viewport,side)
     loop do
       abilitySplashAnim.update
