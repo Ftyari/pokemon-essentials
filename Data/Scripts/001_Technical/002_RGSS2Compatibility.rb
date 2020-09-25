@@ -2,7 +2,7 @@ $TEST               = true if $DEBUG
 $DEBUG              = true if $TEST
 $scene              = nil
 Font.default_shadow = false if Font.respond_to?(:default_shadow)
-Graphics.frame_rate = 45
+Graphics.frame_rate = 40
 
 #===============================================================================
 #
