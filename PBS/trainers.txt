@@ -20,6 +20,35 @@ Pokemon = ELEKID,7
 [CRUSHGIRL,Kia]
 LoseText = "Unreal... You actually beat me!"
 Pokemon = DRAGONITE,50
-	Moves = DRAGONCLAW,WATERFALL,DRAGONDANCE,FIREPUNCH
+    Moves = DRAGONCLAW,WATERFALL,DRAGONDANCE,FIREPUNCH
 Pokemon = ROSERADE,50
-	Moves = GIGADRAIN,SLUDGEBOMB,SUNNYDAY,WEATHERBALL
+    Moves = GIGADRAIN,SLUDGEBOMB,SUNNYDAY,WEATHERBALL
+#-------------------------------
+[BURGLAR,Gerald]
+Pokemon = CHINGLING,1
+#-------------------------------
+[BURGLAR,Harin]
+Pokemon = GRIMER,1
+#-------------------------------
+[BURGLAR,Arnie]
+Pokemon = MAKUHITA,2
+Pokemon = PHANPY,2
+#-------------------------------
+[BURGLAR,Karl]
+Pokemon = ODDISH,3
+#-------------------------------
+[BURGLAR,Sipero]
+Pokemon = TYROGUE,2
+Pokemon = EKANS,2
+Pokemon = PANCHAM,2
+#-------------------------------
+[BURGLAR,Olio]
+Pokemon = VENONAT,3
+#-------------------------------
+[ROUGHNECK,Kyle]
+Pokemon = SPINARAK,3
+Pokemon = FOONGUS,4
+#-------------------------------
+[ROUGHNECK,Dale]
+Pokemon = WOOBAT,3
+Pokemon = GULPIN,4
