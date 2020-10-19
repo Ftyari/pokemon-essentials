@@ -1130,6 +1130,7 @@ class PokemonPartyScreen
       cmdDebug   = -1
       cmdMoves   = [-1,-1,-1,-1]
       cmdSwitch  = -1
+      cmdNickname = -1
       cmdMail    = -1
       cmdItem    = -1
       # Build the commands
@@ -1145,6 +1146,7 @@ class PokemonPartyScreen
         end
       end
       commands[cmdSwitch = commands.length]       = _INTL("Switch") if @party.length>1
+      commands[cmdNickname=commands.length]       = _INTL("Nickname") if !pkmn.egg?
       if !pkmn.egg?
         if pkmn.mail
           commands[cmdMail = commands.length]     = _INTL("Mail")
@@ -1226,6 +1228,11 @@ class PokemonPartyScreen
         if pkmnid>=0 && pkmnid!=oldpkmnid
           pbSwitch(oldpkmnid,pkmnid)
         end
+      elsif cmdNickname>=0 && command==cmdNickname
+        speciesname=PBSpecies.getName(pkmn.species)
+        newname=pbEnterPokemonName(_INTL("{1}'s nickname?",speciesname),0,11,"",pkmn)
+        pkmn.name=(newname=="") ? speciesname : newname
+        pbRefreshSingle(pkmnid)
       elsif cmdMail>=0 && command==cmdMail
         command = @scene.pbShowCommands(_INTL("Do what with the mail?"),
            [_INTL("Read"),_INTL("Take"),_INTL("Cancel")])

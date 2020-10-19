@@ -49,6 +49,14 @@ Weather = Rain,100
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[008]
+# Morgana Declines
+SnapEdges = true
+Weather = Rain,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
 [009]
 # Asteria Alley
 SnapEdges = true
@@ -66,6 +74,14 @@ ShowArea = true
 [015]
 # West Asteria Residence
 SnapEdges = true
+#-------------------------------
+[020]
+# Hestella Hollow
+SnapEdges = true
+Weather = Rain,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [028]
 # Route O-4

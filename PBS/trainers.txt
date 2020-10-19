@@ -25,30 +25,38 @@ Pokemon = ROSERADE,50
     Moves = GIGADRAIN,SLUDGEBOMB,SUNNYDAY,WEATHERBALL
 #-------------------------------
 [BURGLAR,Gerald]
+LoseText = "Well... that could have played out a lot better for me..."
 Pokemon = CHINGLING,1
 #-------------------------------
 [BURGLAR,Harin]
+LoseText = "What? You didn't have your friends with you..."
 Pokemon = GRIMER,1
 #-------------------------------
 [BURGLAR,Arnie]
+LoseText = "Man, it's hard making a living out here."
 Pokemon = MAKUHITA,2
 Pokemon = PHANPY,2
 #-------------------------------
 [BURGLAR,Karl]
+LoseText = "Tch, can't catch a break."
 Pokemon = ODDISH,3
 #-------------------------------
 [BURGLAR,Sipero]
+LoseText = "But... what happens when the backup fails?"
 Pokemon = TYROGUE,2
 Pokemon = EKANS,2
 Pokemon = PANCHAM,2
 #-------------------------------
 [BURGLAR,Olio]
+LoseText = "I wish they called me boss..."
 Pokemon = VENONAT,3
 #-------------------------------
 [ROUGHNECK,Kyle]
+LoseText = "Disappointing."
 Pokemon = SPINARAK,3
 Pokemon = FOONGUS,4
 #-------------------------------
 [ROUGHNECK,Dale]
+LoseText = "Apparently not."
 Pokemon = WOOBAT,3
 Pokemon = GULPIN,4
