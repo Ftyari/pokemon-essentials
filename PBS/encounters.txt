@@ -1,1 +1,20 @@
-﻿
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+028 # Route O-4
+25,10,10
+Land
+    ROCKRUFF,3,4
+    PHANPY,3,4
+    NUMEL,3
+    NUMEL,4
+    ROCKRUFF,4
+    PHANPY,4
+    BONSLY,4
+    HELIOPTILE,4
+    HELIOPTILE,5
+    BONSLY,5
+    HELIOPTILE,5
+    BONSLY,5
+OldRod
+    FEEBAS,5
+    FEEBAS,5

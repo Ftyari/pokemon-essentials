@@ -50,7 +50,7 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [008]
-# Morgana Declines
+# Tokara Slums
 SnapEdges = true
 Weather = Rain,100
 Bicycle = true

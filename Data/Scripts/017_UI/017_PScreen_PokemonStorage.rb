@@ -1398,10 +1398,10 @@ class PokemonStorageScene
       return
     end
     @sprites["pokemon"].visible = true
-    base   = Color.new(88,88,80)
-    shadow = Color.new(168,184,184)
-    nonbase   = Color.new(208,208,208)
-    nonshadow = Color.new(224,224,224)
+    base   = Color.new(240,240,240)
+    shadow = Color.new(120,120,120)
+    nonbase   = Color.new(240,240,240)
+    nonshadow = Color.new(120,120,120)
     pokename = pokemon.name
     textstrings = [
        [pokename,10,8,false,base,shadow]

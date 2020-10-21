@@ -60,3 +60,17 @@ Pokemon = FOONGUS,4
 LoseText = "Apparently not."
 Pokemon = WOOBAT,3
 Pokemon = GULPIN,4
+#-------------------------------
+[CRUSHGIRL,Tepi]
+LoseText = "Well... That didn't work out as planned."
+Pokemon = MACHOP,7
+Pokemon = TORCHIC,7
+#-------------------------------
+[SCIENTISTF,Ria]
+LoseText = "Data received... Painfully..."
+Pokemon = HELIOPTILE,7
+#-------------------------------
+[ROUGHNECK,Taylor]
+LoseText = "Tch, the slime slipped through my hands..."
+Pokemon = CARVANHA,7
+	Moves = RAGE,LEER,FOCUSENERGY,SWIFT

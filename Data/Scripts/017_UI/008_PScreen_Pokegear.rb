@@ -39,7 +39,7 @@ class PokegearButton < SpriteWrapper
     rect.y = @button.height/2 if @selected
     self.bitmap.blt(0,0,@button.bitmap,rect)
     textpos = [
-       [@name,self.bitmap.width/2,10,2,Color.new(248,248,248),Color.new(40,40,40)],
+       [@name,self.bitmap.width/2,10,2,Color.new(240,240,240),Color.new(120,120,120)],
     ]
     pbDrawTextPositions(self.bitmap,textpos)
     imagepos = [
@@ -120,9 +120,13 @@ class PokemonPokegearScreen
 
   def pbStartScreen
     commands = []
+    cmdPC = -1
+    cmdClock = -1
     cmdMap     = -1
     cmdPhone   = -1
     cmdJukebox = -1
+    commands[cmdPC = commands.length]     = ["pc",_INTL("Storage System")]
+    commands[cmdClock = commands.length]     = ["clock",_INTL("Clock")]
     commands[cmdMap = commands.length]     = ["map",_INTL("Map")]
     if $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length>0
       commands[cmdPhone = commands.length] = ["phone",_INTL("Phone")]
@@ -135,6 +139,25 @@ class PokemonPokegearScreen
         break
       elsif cmdMap>=0 && cmd==cmdMap
         pbShowMap(-1,false)
+      elsif cmdPC>=0 && cmd==cmdPC
+        pbPokeCenterPC
+      elsif cmdClock>=0 && cmd==cmdClock
+          pbPlayDecisionSE()
+          month=pbGetTimeNow.month
+          date=pbGetTimeNow.day
+          hour=pbGetTimeNow.hour
+         case pbGetTimeNow.hour
+          when 0  ### When the time is Midnight/0:00. ###
+          Kernel.pbMessage(_INTL("The date is currently: {1}/{2}. The time is currently midnight.",month,date))
+          when 6  ### When the time is 6:00 a.m./6:00. ###
+          Kernel.pbMessage(_INTL("Good Morning, {1}!",$Trainer.name))
+          Kernel.pbMessage(_INTL("The date is currently: {1}/{2}. The time is currently 6:00 a.m.",month,date))
+          when 12 ### When the time is Noon/12:00. ###
+          Kernel.pbMessage(_INTL("The date is currently: {1}/{2}. The time is currently noon.",month,date))
+          when 18 ### When the time is 6:00 p.m./18:00. ###
+          Kernel.pbMessage(_INTL("Good Evening, {1}!",$Trainer.name))
+          Kernel.pbMessage(_INTL("The date is currently: {1}/{2}. The time is currently 6:00 p.m.",month,date))
+      end
       elsif cmdPhone>=0 && cmd==cmdPhone
         pbFadeOutIn {
           PokemonPhoneScene.new.start

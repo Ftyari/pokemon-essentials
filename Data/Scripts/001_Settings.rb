@@ -151,7 +151,7 @@ BADGE_FOR_WATERFALL      = 8
 #===============================================================================
 MOVE_CATEGORY_PER_MOVE    = true
 NEWEST_BATTLE_MECHANICS   = true
-SCALED_EXP_FORMULA        = true
+SCALED_EXP_FORMULA        = false
 SPLIT_EXP_BETWEEN_GAINERS = false
 ENABLE_CRITICAL_CAPTURES  = true
 GAIN_EXP_FOR_CAPTURE      = true
