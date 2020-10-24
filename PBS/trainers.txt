@@ -74,3 +74,8 @@ Pokemon = HELIOPTILE,7
 LoseText = "Tch, the slime slipped through my hands..."
 Pokemon = CARVANHA,7
 	Moves = RAGE,LEER,FOCUSENERGY,SWIFT
+#-------------------------------
+[WANDERER,Ilyssa]
+LoseText = "Sad, but not surprising."
+Pokemon = BOUNSWEET,10
+	Moves = PLAYROUGH,FEINT,RAZORLEAF,SYNTHESIS
