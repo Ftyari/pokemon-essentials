@@ -1,5 +1,47 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+003 # West Asteria City
+25,10,10
+OldRod
+    REMORAID,2
+    REMORAID,3
+GoodRod
+    REMORAID,25,30
+    OCTILLERY,30
+    SLOWPOKE,30
+SuperRod
+    OCTILLERY,55,60
+    OCTILLERY,58,63
+    SLOWBRO,62
+    SLOWKING,62
+    SLOWKING,62
+LandDay
+    SCATTERBUG,3,4
+    ZIGZAGOON,3,4
+    LOTAD,3
+    LOTAD,4
+    SCATTERBUG,3
+    ZIGZAGOON,3
+    SEWADDLE,3
+    FLABEBE,3
+    FLABEBE,4
+    SEWADDLE,4
+    FLABEBE,4
+    SEWADDLE,4
+LandNight
+    HOOTHOOT,3
+    BELLSPROUT,3
+    HOOTHOOT,4
+    BELLSPROUT,4
+    SEEDOT,3
+    SEEDOT,4
+    VENONAT,3
+    VENONAT,4
+    SPRITZEE,3
+    SPRITZEE,3
+    SPRITZEE,4
+    SPRITZEE,4
+#-------------------------------
 028 # Route O-4
 25,10,10
 Land
