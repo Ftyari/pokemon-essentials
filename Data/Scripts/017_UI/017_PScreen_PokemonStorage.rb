@@ -1716,7 +1716,7 @@ class PokemonStorageScreen
             p = (heldpoke) ? heldpoke : @storage[-1,index]
             p.formTime = nil if p.respond_to?("formTime")
             p.form     = 0 if p.isSpecies?(:SHAYMIN)
-            p.heal
+            # Just in case: p.heal
           end
           @scene.pbStore(selected,heldpoke,destbox,firstfree)
           if heldpoke
@@ -1763,7 +1763,7 @@ class PokemonStorageScreen
     if box>=0
       @heldpkmn.formTime = nil if @heldpkmn.respond_to?("formTime")
       @heldpkmn.form     = 0 if @heldpkmn.isSpecies?(:SHAYMIN)
-      @heldpkmn.heal
+      # just in case @heldpkmn.heal
     end
     @scene.pbPlace(selected,@heldpkmn)
     @storage[box,index] = @heldpkmn
@@ -1792,7 +1792,7 @@ class PokemonStorageScreen
     if box>=0
       @heldpkmn.formTime = nil if @heldpkmn.respond_to?("formTime")
       @heldpkmn.form     = 0 if @heldpkmn.isSpecies?(:SHAYMIN)
-      @heldpkmn.heal
+      # just in case @heldpkmn.heal
     end
     @scene.pbSwap(selected,@heldpkmn)
     tmp = @storage[box,index]
@@ -1812,6 +1812,24 @@ class PokemonStorageScreen
       return false
     elsif pokemon.mail
       pbDisplay(_INTL("Please remove the mail."))
+      return false
+    elsif isConst?(pokemon.species,PBSpecies,:GOTHITA)
+      pbDisplay(_INTL("This Pokémon refuses to leave!"))
+      return false
+    elsif isConst?(pokemon.species,PBSpecies,:GOTHORITA)
+      pbDisplay(_INTL("This Pokémon refuses to leave!"))
+      return false
+    elsif isConst?(pokemon.species,PBSpecies,:GOTHITELLE)
+      pbDisplay(_INTL("This Pokémon refuses to leave!"))
+      return false
+    elsif isConst?(pokemon.species,PBSpecies,:CLEFFA)
+      pbDisplay(_INTL("This Pokémon refuses to leave!"))
+      return false
+    elsif isConst?(pokemon.species,PBSpecies,:CLEFAIRY)
+      pbDisplay(_INTL("This Pokémon refuses to leave!"))
+      return false
+    elsif isConst?(pokemon.species,PBSpecies,:CLEFABLE)
+      pbDisplay(_INTL("This Pokémon refuses to leave!"))
       return false
     end
     if box==-1 && pbAbleCount<=1 && pbAble?(pokemon) && !heldpoke

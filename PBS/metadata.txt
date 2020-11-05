@@ -83,6 +83,14 @@ Bicycle = true
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[021]
+# Hestella Crossroads
+SnapEdges = true
+Weather = Rain,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
 [028]
 # Route O-4
 SnapEdges = true

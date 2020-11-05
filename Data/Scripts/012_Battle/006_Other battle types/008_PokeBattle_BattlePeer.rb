@@ -27,7 +27,7 @@ class PokeBattle_RealBattlePeer
       player.party[player.party.length] = pkmn
       return -1
     end
-    pkmn.heal
+    # just in case pkmn.heal
     oldCurBox = pbCurrentBox
     storedBox = $PokemonStorage.pbStoreCaught(pkmn)
     if storedBox<0
