@@ -111,6 +111,7 @@ class PokemonPauseMenu
     cmdPokegear = -1
     cmdDebug    = -1
     cmdQuit     = -1
+    cmdReturnHome = -1
     cmdEndGame  = -1
     commands[cmdPokedex = commands.length]  = _INTL("Pokédex") if $Trainer.pokedex && $PokemonGlobal.pokedexViable.length>0
     commands[cmdPokemon = commands.length]  = _INTL("Pokémon") if $Trainer.party.length>0
@@ -140,6 +141,7 @@ class PokemonPauseMenu
     end
     commands[cmdOption = commands.length]   = _INTL("Options")
     commands[cmdDebug = commands.length]    = _INTL("Debug") if $DEBUG
+    commands[cmdReturnHome = commands.length]  = _INTL("Return Home") if $game_switches[70]
     commands[cmdEndGame = commands.length]  = _INTL("Quit Game")
     loop do
       command = @scene.pbShowCommands(commands)
@@ -254,6 +256,16 @@ class PokemonPauseMenu
           pbDebugMenu
           @scene.pbRefresh
         }
+      elsif  cmdReturnHome>=0 && command==cmdReturnHome
+        @scene.pbHideMenu
+        if pbConfirmMessage(_INTL("Would you like to return home?"))
+              @scene.pbEndScene
+              pbReturnToPlayerHouse
+              @scene.pbRefresh
+              return
+            else
+              pbShowMenu
+        end
       elsif cmdEndGame>=0 && command==cmdEndGame
         @scene.pbHideMenu
         if pbConfirmMessage(_INTL("Are you sure you want to quit the game?"))

@@ -75,6 +75,13 @@ ShowArea = true
 # West Asteria Residence
 SnapEdges = true
 #-------------------------------
+[019]
+# Miden Grove
+SnapEdges = true
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
 [020]
 # Hestella Hollow
 SnapEdges = true
@@ -111,4 +118,42 @@ SnapEdges = true
 Bicycle = false
 Outdoor = false
 BicycleAlways = false
+ShowArea = true
+#-------------------------------
+[046]
+# Lancaster Residence
+SnapEdges = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[058]
+# Mesoe Woods
+SnapEdges = true
+BattleBack = grass
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[059]
+# Mt. Mesoe Entrance
+SnapEdges = true
+BattleBack = cave1
+ShowArea = true
+#-------------------------------
+[060]
+# Mt. Mesoe
+SnapEdges = true
+BattleBack = cave1
+ShowArea = false
+#-------------------------------
+[072]
+# Treehouse
+SnapEdges = true
+#-------------------------------
+[074]
+# Marina Plaza
+SnapEdges = true
+Weather = Rain,100
+Bicycle = true
+Outdoor = true
 ShowArea = true

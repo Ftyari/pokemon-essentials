@@ -588,3 +588,4 @@
 488,SUBCAPSULE2,Sub Capsule,Sub Capsules,8,0,"A refurbished capsule fixed by Mr. Rimos. It stores up energy to fully heal the party! It's currently full.",2,0,6,
 489,EMPTYCAPSULE1,Empty Sub Capsule, Empty Sub Capsules,8,0,"A refurbished capsule fixed by Mr. Rimos. It stores up energy to fully heal the party! It's currently empty...",2,0,6,
 490,EMPTYCAPSULE2,Empty Sub Capsule, Empty Sub Capsules,8,0,"A refurbished capsule fixed by Mr. Rimos. It stores up energy to fully heal the party! It's currently empty...",2,0,6,
+495,LAPTOP,Laptop,Laptops,8,0,"A portable computer that allows access to the Pokémon Storage System on the fly!",2,0,6,

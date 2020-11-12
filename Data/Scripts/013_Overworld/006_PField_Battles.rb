@@ -621,31 +621,31 @@ def pbPickup(pkmn)
   return unless rand(100)<10   # 10% chance
   # Common items to find (9 items from this list are added to the pool)
   pickupList = pbDynamicItemList(
-     :POTION,
-     :ANTIDOTE,
-     :SUPERPOTION,
+     :ORANBERRY,
+     :PECHABERRY,
+     :SITRUSBERRY,
      :GREATBALL,
      :REPEL,
-     :ESCAPEROPE,
+     :NESTBALL,
      :FULLHEAL,
-     :HYPERPOTION,
+     :REPEATBALL,
      :ULTRABALL,
      :REVIVE,
      :RARECANDY,
      :SUNSTONE,
      :MOONSTONE,
      :HEARTSCALE,
-     :FULLRESTORE,
+     :ETHER,
      :MAXREVIVE,
      :PPUP,
      :MAXELIXIR
   )
   # Rare items to find (2 items from this list are added to the pool)
   pickupListRare = pbDynamicItemList(
-     :HYPERPOTION,
+     :SITRUSBERRY,
      :NUGGET,
      :KINGSROCK,
-     :FULLRESTORE,
+     :PPUP,
      :ETHER,
      :IRONBALL,
      :DESTINYKNOT,

@@ -338,6 +338,14 @@ ItemHandlers::UseInField.add(:EXPALLOFF,proc { |item|
   next 1
 })
 
+ItemHandlers::UseInField.add(:LAPTOP,proc{|item|
+   if $game_switches[71]
+     pbPokeCenterPC
+   else
+    pbMessage(_INTL("Sorry, but the network is down at this current point in time."))
+   end     
+   next 1
+})
 #===============================================================================
 # UseOnPokemon handlers
 #===============================================================================

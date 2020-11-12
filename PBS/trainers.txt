@@ -73,9 +73,162 @@ Pokemon = HELIOPTILE,7
 [ROUGHNECK,Taylor]
 LoseText = "Tch, the slime slipped through my hands..."
 Pokemon = CARVANHA,7
-	Moves = RAGE,LEER,FOCUSENERGY,SWIFT
+    Moves = RAGE,LEER,FOCUSENERGY,SWIFT
 #-------------------------------
 [WANDERER,Ilyssa]
 LoseText = "Sad, but not surprising."
 Pokemon = BOUNSWEET,10
-	Moves = PLAYROUGH,FEINT,RAZORLEAF,SYNTHESIS
+    Moves = PLAYROUGH,FEINT,RAZORLEAF,SYNTHESIS
+#-------------------------------
+[NEMOPHILIST,Bethany]
+LoseText = "Just for that, I'm not telling you where to look!"
+Pokemon = LOTAD,7
+Pokemon = SEEDOT,7
+#-------------------------------
+[POKEMONBREEDER,Annie]
+LoseText = "Oh well..."
+Pokemon = ROWLET,7
+    Moves = TACKLE,LEAFAGE,GROWL,OMINOUSWIND
+Pokemon = BULBASAUR,7
+    Moves = MAGICALLEAF,CHARM,LEECHSEED,SLUDGE
+#-------------------------------
+[HIKER,Rubert]
+Pokemon = BONSLY,8
+Pokemon = PINECO,8
+#-------------------------------
+[NEMOPHILIST,Liah]
+Pokemon = VENIPEDE,8
+Pokemon = SEWADDLE,8
+#-------------------------------
+[SCIENTISTF,Marie]
+Pokemon = VENONAT,8
+Pokemon = MAREEP,8
+Pokemon = ZUBAT,8
+#-------------------------------
+[CRUSHGIRL,Qira]
+Pokemon = SCRAGGY,9
+Pokemon = OSHAWOTT,9
+#-------------------------------
+[SCIENTIST,Kory]
+Pokemon = DEERLING,8
+Pokemon = ELECTRIKE,8
+#-------------------------------
+[BLACKBELT,Ron]
+Pokemon = CHESPIN,9
+Pokemon = SANDSHREW,9
+#-------------------------------
+[HIKER,Monty]
+Pokemon = TIMBURR,11
+Pokemon = GEODUDE,10
+    Form = 1
+    Moves = CHARGE,ROLLOUT,ROCKPOLISH,SPARK
+#-------------------------------
+[BLACKBELT,Chaz]
+Pokemon = MACHOP,12
+Pokemon = RIOLU,12
+#-------------------------------
+[DOCTOR,Tom]
+Pokemon = AUDINO,15
+Pokemon = SPRITZEE,15
+#-------------------------------
+[GUITARIST,Lola]
+Pokemon = WHISMUR,13
+    Moves = HOWL,POUND,ECHOEDVOICE,ASTONISH
+Pokemon = LOMBRE,14
+    Moves = REST,SLEEPTALK,BUBBLE,ABSORB
+#-------------------------------
+[CRUSHGIRL,Chana]
+Pokemon = SNUBBULL,15
+Pokemon = STUFFUL,15
+#-------------------------------
+[WANDERER,Ilyssa,1]
+Pokemon = BOUNSWEET,17
+    Gender = female
+    Moves = PLAYROUGH,FEINT,RAZORLEAF,SYNTHESIS
+    Ability = 2
+    Item = ORANBERRY
+    Nature = ADAMANT
+    IV = 31
+    EV = 4,252,0,252,0,0
+Pokemon = TYMPOLE,16
+    Moves = BUBBLEBEAM,EARTHPOWER,ROUND,WATERPULSE
+    Ability = 2
+    Item = ORANBERRY
+    Nature = MODEST
+    IV = 31
+    EV = 252,0,0,0,252,4
+#-------------------------------
+[CUBANDMA,Kangaskhan & Litleo]
+Pokemon = LITLEO,16
+    Gender = male
+    Moves = EMBER,NOBLEROAR,HEADBUTT,WORKUP
+    Ability = 2
+    Nature = HASTY
+    IV = 31
+    EV = 4,252,0,252,0,0
+Pokemon = LITLEO,16
+    Gender = female
+    Moves = EMBER,NOBLEROAR,HEADBUTT,WORKUP
+    Ability = 2
+    Nature = HASTY
+    IV = 31
+    EV = 4,0,0,252,252,0
+Pokemon = KANGASKHAN,17
+    Moves = LEER,FAKEOUT,TAILWHIP,BITE
+    Ability = 1
+    Nature = ADAMANT
+    IV = 31
+    EV = 4,252,0,252,0,0
+#-------------------------------
+[POKEMONBREEDER,Testla]
+Pokemon = MAGIKARP,15
+    Gender = male
+    Shadow = yes
+    Ability = 2
+    Nature = HASTY
+    IV = 31
+    EV = 4,252,0,252,0,0
+#-------------------------------
+[DOCTOR,Alex]
+Pokemon = COMFEY,15
+Pokemon = AUDINO,15
+#-------------------------------
+[PRESCHOOLER,Lily]
+Pokemon = PLUSLE,15
+Pokemon = MINUN,15
+#-------------------------------
+[NEMOPHILIST,Kira]
+Pokemon = BEAUTIFLY,15
+Pokemon = ROSELIA,15
+#-------------------------------
+[SCIENTIST,Daz]
+Pokemon = EMOLGA,17
+Pokemon = LUXIO,18
+#-------------------------------
+[BURGLAR,Kyle]
+Pokemon = RATTATA,18
+Pokemon = KOFFING,17
+#-------------------------------
+[CRUSHGIRL,Xia]
+Pokemon = CRABRAWLER,18
+Pokemon = MONFERNO,18
+Pokemon = CORPHISH,18
+#-------------------------------
+[BURGLAR,Ian]
+Pokemon = GROWLITHE,19
+Pokemon = YAMASK,19
+Pokemon = DUSTOX,19
+#-------------------------------
+[SCIENTISTF,Becka]
+Pokemon = MAGNEMITE,19
+Pokemon = BLITZLE,19
+Pokemon = GEODUDE,19
+#-------------------------------
+[ROUGHNECK,Brandon]
+Pokemon = VENIPEDE,19
+Pokemon = VENONAT,19
+Pokemon = EKANS,19
+#-------------------------------
+[ROUGHNECK,Dayton]
+Pokemon = CROAGUNK,18
+Pokemon = VIGOROTH,19

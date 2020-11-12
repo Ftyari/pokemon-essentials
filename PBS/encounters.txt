@@ -60,3 +60,19 @@ Land
 OldRod
     FEEBAS,5
     FEEBAS,5
+#-------------------------------
+058 # Mesoe Woods
+25,10,10
+Land
+    BLITZLE,7
+    MORELULL,7
+    BLITZLE,8
+    MORELULL,8
+    AIPOM,7
+    AIPOM,7
+    AIPOM,8
+    AIPOM,8
+    MORELULL,9
+    BLITZLE,9
+    MORELULL,9
+    BLITZLE,9

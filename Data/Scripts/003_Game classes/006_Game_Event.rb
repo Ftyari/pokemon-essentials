@@ -97,6 +97,12 @@ class Game_Event < Game_Character
     return ontime && (time.to_i>ontime+secs)
   end
 
+  def expired1?(secs=21600)
+    ontime=self.variable
+    time=pbGetTimeNow
+    return ontime && (time.to_i>ontime+secs)
+  end
+
   def expiredDays?(days=1)
     ontime=self.variable.to_i
     return false if !ontime

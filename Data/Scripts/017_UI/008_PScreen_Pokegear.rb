@@ -120,12 +120,10 @@ class PokemonPokegearScreen
 
   def pbStartScreen
     commands = []
-    cmdPC = -1
     cmdClock = -1
     cmdMap     = -1
     cmdPhone   = -1
     cmdJukebox = -1
-    commands[cmdPC = commands.length]     = ["pc",_INTL("Storage System")]
     commands[cmdClock = commands.length]     = ["clock",_INTL("Clock")]
     commands[cmdMap = commands.length]     = ["map",_INTL("Map")]
     if $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length>0
@@ -139,8 +137,6 @@ class PokemonPokegearScreen
         break
       elsif cmdMap>=0 && cmd==cmdMap
         pbShowMap(-1,false)
-      elsif cmdPC>=0 && cmd==cmdPC
-        pbPokeCenterPC
       elsif cmdClock>=0 && cmd==cmdClock
           pbPlayDecisionSE()
           month=pbGetTimeNow.month

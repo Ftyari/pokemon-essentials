@@ -13,7 +13,7 @@ Events.onWildPokemonCreate += proc { |_sender, e|
   end
 }
 
-### Makes Event Pokémon turn into their Alolan Form. ### 
+### Makes Event Pokémon turn into their Alolan Form. ###
 
 Events.onWildPokemonCreate += proc { |_sender, e|
   pokemon = e[0]
@@ -61,8 +61,8 @@ Events.onWildPokemonCreate+=proc {|sender,e|
     when 2 #Pichu. «Dex Number: 172.»
      pokemon.pbLearnMove(:FAKEOUT)
     when 3 #Zoroark-Scyl. «Dex Number: 571.»
-     pokemon.pbLearnMove(:FLAMETHROWER) 
-     pokemon.pbLearnMove(:NASTYPLOT) 
+     pokemon.pbLearnMove(:FLAMETHROWER)
+     pokemon.pbLearnMove(:NASTYPLOT)
      pokemon.pbLearnMove(:DARKPULSE)
      pokemon.pbLearnMove(:SLUDGEBOMB)
      pokemon.ot="Luca"
@@ -72,8 +72,8 @@ Events.onWildPokemonCreate+=proc {|sender,e|
     when 4 #Deerling. «Dex Number: 585.»
      pokemon.pbLearnMove(:SYNTHESIS)
     when 5 #Mimikyu-Scyl. «Dex Number: 778.»
-     pokemon.pbLearnMove(:SWORDSDANCE) 
-     pokemon.pbLearnMove(:SHADOWSNEAK) 
+     pokemon.pbLearnMove(:SWORDSDANCE)
+     pokemon.pbLearnMove(:SHADOWSNEAK)
      pokemon.pbLearnMove(:PLAYROUGH)
      pokemon.pbLearnMove(:SHADOWCLAW)
      pokemon.ot="Luca"
@@ -86,8 +86,8 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:SURF)
      pokemon.pbLearnMove(:ROOST)
     when 7 #« Placeholder (2). »
-     pokemon.pbLearnMove(:SWORDSDANCE) 
-     pokemon.pbLearnMove(:SHADOWSNEAK) 
+     pokemon.pbLearnMove(:SWORDSDANCE)
+     pokemon.pbLearnMove(:SHADOWSNEAK)
      pokemon.pbLearnMove(:PLAYROUGH)
      pokemon.pbLearnMove(:SHADOWCLAW)
      pokemon.ot="Scyl"
@@ -100,16 +100,16 @@ Events.onWildPokemonCreate+=proc {|sender,e|
     when 9 #Sandygast. «Dex Number: 769.»
      pokemon.pbLearnMove(:CURSE)
      pokemon.pbLearnMove(:DESTINYBOND)
-    when 10 #« Ability 0 is forced. » 
+    when 10 #« Ability 0 is forced. »
      pokemon.setAbility(0)
     when 11 #« Ability 2 is forced. »
-     pokemon.setAbility(2) 
+     pokemon.setAbility(2)
     when 12 #« Placeholder (3). »
      pokemon.pbLearnMove(:MUDSHOT)
      pokemon.pbLearnMove(:PSYBEAM)
      pokemon.pbLearnMove(:AQUAJET)
     when 13 # « Test for Throat Chop. »
-     pokemon.pbLearnMove(:HYPERVOICE) 
+     pokemon.pbLearnMove(:HYPERVOICE)
      pokemon.pbLearnMove(:UPROAR)
      pokemon.pbLearnMove(:ROUND)
      pokemon.pbLearnMove(:ROAR)
@@ -120,7 +120,7 @@ Events.onWildPokemonCreate+=proc {|sender,e|
     when 16 #Rhyhorn-1. «Dex Number: 111.»
      pokemon.pbLearnMove(:ICEFANG)
      pokemon.pbLearnMove(:COUNTER)
-    when 17 #Rhyhorn-2. «Dex Number: 111.» 
+    when 17 #Rhyhorn-2. «Dex Number: 111.»
      pokemon.pbLearnMove(:FIREFANG)
      pokemon.pbLearnMove(:METALBURST)
     when 18 #Rhyhorn-3. «Dex Number: 111.»
@@ -129,7 +129,7 @@ Events.onWildPokemonCreate+=proc {|sender,e|
     when 19 #Purrloin-1. «Dex Number: 509.»
      pokemon.pbLearnMove(:FOULPLAY)
      pokemon.pbLearnMove(:YAWN)
-    when 20 #Purrloin-2. «Dex Number: 509.»  
+    when 20 #Purrloin-2. «Dex Number: 509.»
      pokemon.pbLearnMove(:FEINTATTACK)
      pokemon.pbLearnMove(:ENCORE)
     when 21 #Test because IVs and nature are aids.
@@ -149,7 +149,7 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:POWERUPPUNCH)
      pokemon.pbLearnMove(:ACIDSPRAY)
     when 24 #Stunky-1. «Dex Number: 434.»
-     pokemon.pbLearnMove(:FLAMEBURST)      
+     pokemon.pbLearnMove(:FLAMEBURST)
     when 25 #Stunky-2. «Dex Number: 434.»
      pokemon.pbLearnMove(:PLAYROUGH)
     when 26 #Snubbull-1. «Dex Number: 209.»
@@ -157,26 +157,26 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:CLOSECOMBAT)
     when 27 #Snubbull-2. «Dex Number: 209.»
      pokemon.pbLearnMove(:FIREFANG)
-     pokemon.pbLearnMove(:CLOSECOMBAT)      
+     pokemon.pbLearnMove(:CLOSECOMBAT)
     when 28 #Snubbull-3. «Dex Number: 209.»
      pokemon.pbLearnMove(:THUNDERFANG)
      pokemon.pbLearnMove(:CLOSECOMBAT)
     when 29 #Poochyena-1. «Dex Number: 261.»
      pokemon.pbLearnMove(:ICEFANG)
-     pokemon.pbLearnMove(:PLAYROUGH)      
+     pokemon.pbLearnMove(:PLAYROUGH)
     when 30 #Poochyena-2. «Dex Number: 261.»
      pokemon.pbLearnMove(:FIREFANG)
-     pokemon.pbLearnMove(:PLAYROUGH)      
+     pokemon.pbLearnMove(:PLAYROUGH)
     when 31 #Poochyena-3. «Dex Number: 261.»
      pokemon.pbLearnMove(:THUNDERFANG)
-     pokemon.pbLearnMove(:PLAYROUGH) 
+     pokemon.pbLearnMove(:PLAYROUGH)
     when 32 #« Placeholder (6). »
      pokemon.pbLearnMove(:AGILITY)
      pokemon.pbLearnMove(:NASTYPLOT)
      pokemon.pbLearnMove(:THUNDERWAVE)
      pokemon.pbLearnMove(:TRICK)
     when 33 #Cutiefly. «Dex Number: 742.»
-     pokemon.pbLearnMove(:STICKYWEB) 
+     pokemon.pbLearnMove(:STICKYWEB)
     when 34 #Aipom. «Dex Number: 190.»
      pokemon.pbLearnMove(:CRUNCH)
     when 35 #Exeggcute. «Dex Number: 102.»
@@ -185,7 +185,7 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:TAILWIND)
      pokemon.makeFemale
     when 37 #Totodile-1. «Dex Number: 158.»
-     pokemon.pbLearnMove(:AQUAJET) 
+     pokemon.pbLearnMove(:AQUAJET)
     when 38 #Totodile-2. «Dex Number: 158.»
      pokemon.pbLearnMove(:DRAGONDANCE)
     when 39 #Pumpkaboo-1. «Dex Number: 710.»
@@ -204,11 +204,11 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:WIDEGUARD)
      pokemon.pbLearnMove(:AUTOTOMIZE)
     when 44 #Makuhita-1. «Dex Number: 296.»
-     pokemon.pbLearnMove(:DETECT) 
-     pokemon.pbLearnMove(:WIDEGUARD) 
+     pokemon.pbLearnMove(:DETECT)
+     pokemon.pbLearnMove(:WIDEGUARD)
     when 45 #Makuhita-2. «Dex Number: 296.»
      pokemon.pbLearnMove(:BULLETPUNCH)
-     pokemon.pbLearnMove(:WIDEGUARD)    
+     pokemon.pbLearnMove(:WIDEGUARD)
     when 46 #Hoppip. «Dex Number: 187.»
      pokemon.pbLearnMove(:HELPINGHAND)
      pokemon.pbLearnMove(:SEEDBOMB)
@@ -230,7 +230,7 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:HAZE)
     when 53 #Swablu-2. «Dex Number: 333.»
      pokemon.pbLearnMove(:DRAGONRUSH)
-     pokemon.pbLearnMove(:FEATHERDANCE) 
+     pokemon.pbLearnMove(:FEATHERDANCE)
     when 54 #Woobat. «Dex Number: 527.»
      pokemon.pbLearnMove(:ROOST)
     when 55 #Sableye-1. «Dex Number: 302.»
@@ -248,6 +248,14 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:AROMATHERAPY)
     when 60 #Fomantis-2. «Dex Number: 753.»
      pokemon.pbLearnMove(:WEATHERBALL)
-     pokemon.pbLearnMove(:AROMATHERAPY) 
-    end 
+     pokemon.pbLearnMove(:AROMATHERAPY)
+    end
+}
+
+# Make all wild Pokémon have a chance to have their hidden ability.
+Events.onWildPokemonCreate+=proc {|sender,e|
+   pokemon=e[0]
+   if rand(10) < 3
+     pokemon.setAbility(2)
+   end
 }

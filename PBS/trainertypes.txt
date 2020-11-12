@@ -17,3 +17,6 @@
 14,NEMOPHILIST,Nemophilist,32,,,,Female,,
 15,SHIKARI,Shikari,60,,,,Female,255,
 16,CRUSHGIRL,Crush Girl,25,,,,Female,,
+17,FISHERMAN,Fisherman,32,,,,Male,,
+18,POKEMONBREEDER,Pokémon Breeder,1,,,,Female,255,
+19,CUBANDMA,Mother and Cub,1,BossBattleTheme,,,Female,255,
