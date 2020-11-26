@@ -90,7 +90,7 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:SHADOWSNEAK)
      pokemon.pbLearnMove(:PLAYROUGH)
      pokemon.pbLearnMove(:SHADOWCLAW)
-     pokemon.ot="Scyl"
+     pokemon.ot="Luca"
      pokemon.trainerID=$Trainer.getForeignID
      pokemon.name="???"
      pokemon.makeFemale

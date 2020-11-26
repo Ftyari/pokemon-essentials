@@ -549,6 +549,7 @@
 458,TM98,TM98,TM98s,4,3000,"It swamps the area around the user with a giant wave. It can also be used for crossing water.",3,0,0,SURF
 459,TM99,TM99,TM99s,4,1000,"The user damages opposing Pokémon by emitting a powerful flash.",3,0,0,DAZZLINGGLEAM
 460,TM100,TM100,TM100s,4,3000,"The user soars, then strikes on the second turn. It can also be used to fly to any familiar town.",3,0,0,FLY
+497,TM101,TM101,TM101s,4,3000,"The user charges at the opponent and gives them a constricting hug; lowers Attack.",3,0,0,SNUGGLESQUASH
 #---------------------------------------------------------------------------
 #                     » Drinks (461-465)(486) « 
 #---------------------------------------------------------------------------
@@ -589,3 +590,7 @@
 489,EMPTYCAPSULE1,Empty Sub Capsule, Empty Sub Capsules,8,0,"A refurbished capsule fixed by Mr. Rimos. It stores up energy to fully heal the party! It's currently empty...",2,0,6,
 490,EMPTYCAPSULE2,Empty Sub Capsule, Empty Sub Capsules,8,0,"A refurbished capsule fixed by Mr. Rimos. It stores up energy to fully heal the party! It's currently empty...",2,0,6,
 495,LAPTOP,Laptop,Laptops,8,0,"A portable computer that allows access to the Pokémon Storage System on the fly!",2,0,6,
+#---------------------------------------------------------------------------
+#                     » Mail (496) « 
+#---------------------------------------------------------------------------
+496,AIRMAIL,Air Mail,Air Mail,6,50,"Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery.",0,0,2,

@@ -20,3 +20,4 @@
 17,FISHERMAN,Fisherman,32,,,,Male,,
 18,POKEMONBREEDER,Pokémon Breeder,1,,,,Female,255,
 19,CUBANDMA,Mother and Cub,1,BossBattleTheme,,,Female,255,
+20,MASKEDMAN,Masked Man,1,BossBattleTheme,,,Male,255,

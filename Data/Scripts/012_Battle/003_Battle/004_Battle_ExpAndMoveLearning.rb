@@ -134,15 +134,15 @@ class PokeBattle_Battle
       exp /= 7
     end
     # Foreign Pokémon gain more Exp
-    isOutsider = (pkmn.trainerID!=pbPlayer.id ||
-                 (pkmn.language!=0 && pkmn.language!=pbPlayer.language))
-    if isOutsider
-      if pkmn.language!=0 && pkmn.language!=pbPlayer.language
-        exp = (exp*1.7).floor
-      else
-        exp = (exp*1.5).floor
-      end
-    end
+     isOutsider = (pkmn.trainerID!=pbPlayer.id ||
+                  (pkmn.language!=0 && pkmn.language!=pbPlayer.language))
+     if isOutsider
+       if pkmn.language!=0 && pkmn.language!=pbPlayer.language
+          exp = (exp*1.7).floor
+       else
+         exp = (exp*1.5).floor
+       end
+     end
     # Modify Exp gain based on pkmn's held item
     i = BattleHandlers.triggerExpGainModifierItem(pkmn.item,pkmn,exp)
     if i<0
@@ -156,9 +156,9 @@ class PokeBattle_Battle
     # "Exp gained" message
     if showMessages
       if isOutsider
-        pbDisplayPaused(_INTL("{1} got a boosted {2} Exp. Points!",pkmn.name,expGained))
+        pbDisplayPaused(_INTL("{1} received an elevated {2} Exp. Points!",pkmn.name,expGained))
       else
-        pbDisplayPaused(_INTL("{1} got {2} Exp. Points!",pkmn.name,expGained))
+        pbDisplayPaused(_INTL("{1} received {2} Exp. Points!",pkmn.name,expGained))
       end
     end
     curLevel = pkmn.level

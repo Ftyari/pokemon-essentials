@@ -118,6 +118,16 @@ class PokemonPauseMenu
     commands[cmdBag = commands.length]      = _INTL("Bag") if !pbInBugContest?
     commands[cmdPokegear = commands.length] = _INTL("L-Caster") if $Trainer.pokegear
     commands[cmdTrainer = commands.length]  = $Trainer.name
+    case pbGetTimeNow.hour
+      when 0
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: 12:00 a.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
+      when 6
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: {3}:00 a.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
+      when 12
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: {3}:00 p.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
+      when 18
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: 6:00 p.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
+    end
     if pbInSafari?
       if SAFARI_STEPS<=0
         @scene.pbShowInfo(_INTL("Balls: {1}",pbSafariState.ballcount))

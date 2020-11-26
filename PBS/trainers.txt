@@ -232,3 +232,31 @@ Pokemon = EKANS,19
 [ROUGHNECK,Dayton]
 Pokemon = CROAGUNK,18
 Pokemon = VIGOROTH,19
+#-------------------------------
+[MASKEDMAN,Regale]
+Pokemon = GLOOM,22
+    Moves = GIGADRAIN,CHARM,STRENGTHSAP,VENOSHOCK
+    Ability = 2
+    Nature = MODEST
+    IV = 31
+    EV = 50,0,50,0,50,50
+Pokemon = MIGHTYENA,22
+    Moves = SNARL,SUCKERPUNCH,ICEFANG,FIREFANG
+    Ability = 0
+    Nature = ADAMANT
+    IV = 31
+    EV = 50,50,50,50,0,50
+Pokemon = LINOONE,22
+    Moves = HEADBUTT,PLAYROUGH,EXTREMESPEED,SEEDBOMB
+    Ability = 0
+	Item = SITRUSBERRY
+    Nature = ADAMANT
+    IV = 31
+    EV = 50,50,50,50,0,50
+Pokemon = DRUDDIGON,23
+    Moves = SLASH,HONECLAWS,SUCKERPUNCH,ROCKSLIDE
+    Ability = 0
+	Item = ROCKYHELMET
+    Nature = IMPISH
+    IV = 31
+    EV = 50,50,50,0,0,50

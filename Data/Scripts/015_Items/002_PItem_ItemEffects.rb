@@ -343,7 +343,17 @@ ItemHandlers::UseInField.add(:LAPTOP,proc{|item|
      pbPokeCenterPC
    else
     pbMessage(_INTL("Sorry, but the network is down at this current point in time."))
-   end     
+   end
+   next 1
+})
+
+ItemHandlers::UseInField.add(:SUBCAPSULE1,proc { |item|
+   pbCommonEvent(28)
+   next 1
+})
+
+ItemHandlers::UseInField.add(:SUBCAPSULE2,proc { |item|
+   pbCommonEvent(29)
    next 1
 })
 #===============================================================================

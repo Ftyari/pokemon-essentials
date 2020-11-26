@@ -4197,7 +4197,7 @@ BattlerEnemyX = -7
 BattlerEnemyY = 11
 BattlerShadowX = 0
 BattlerShadowSize = 3
-Evolutions = MAGMORTAR,TradeItem,MAGMARIZER
+Evolutions = MAGMORTAR,HoldItem,MAGMARIZER
 #-------------------------------
 [127]
 Name = Pinsir
@@ -24159,7 +24159,7 @@ WildItemUncommon = MIRACLESEED
 BattlerPlayerX = 0
 BattlerPlayerY = 0
 BattlerEnemyX = 0
-BattlerEnemyY = 0
+BattlerEnemyY = 24
 BattlerShadowX = 0
 BattlerShadowSize = 2
 Evolutions = LURANTIS,LevelDay,34

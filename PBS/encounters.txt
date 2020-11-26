@@ -76,3 +76,19 @@ Land
     BLITZLE,9
     MORELULL,9
     BLITZLE,9
+#-------------------------------
+068 # Skiacrest Castle Garden
+25,10,10
+Land
+    RATTATA,18
+    SPEWPA,18
+    NUZLEAF,18
+    NUZLEAF,18
+    RATTATA,19
+    SPEWPA,19
+    RATTATA,20
+    SPEWPA,20
+    NUZLEAF,20
+    NUZLEAF,20
+    NUZLEAF,21
+    NUZLEAF,21

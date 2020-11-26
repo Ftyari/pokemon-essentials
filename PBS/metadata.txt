@@ -50,7 +50,7 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [008]
-# Tokara Slums
+# Satelo Slums
 SnapEdges = true
 Weather = Rain,100
 Bicycle = true
@@ -146,6 +146,24 @@ SnapEdges = true
 BattleBack = cave1
 ShowArea = false
 #-------------------------------
+[066]
+# Skiacrest Castle Exterior
+SnapEdges = true
+Weather = Rain,100
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[067]
+# Skiacrest Castle Interior
+SnapEdges = true
+#-------------------------------
+[068]
+# Skiacrest Castle Garden
+SnapEdges = true
+Weather = Rain,100
+Outdoor = true
+ShowArea = true
+#-------------------------------
 [072]
 # Treehouse
 SnapEdges = true
@@ -155,5 +173,12 @@ SnapEdges = true
 SnapEdges = true
 Weather = Rain,100
 Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[075]
+# Lambent Hollow
+SnapEdges = true
+Bicycle = false
 Outdoor = true
 ShowArea = true

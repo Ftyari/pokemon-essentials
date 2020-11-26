@@ -133,6 +133,7 @@
 127,MISTYTERRAIN,Misty Terrain,156,0,FAIRY,Status,0,10,0,BothSides,0,,"The user covers the ground with mist for five turns. Grounded Pokémon can't gain status conditions."
 128,MOONLIGHT,Moonlight,0D8,0,FAIRY,Status,0,5,0,User,0,d,"The user restores its own HP. The amount of HP regained varies with the weather."
 129,SWEETKISS,Sweet Kiss,013,0,FAIRY,Status,75,10,0,NearOther,0,bce,"The user kisses the target with a sweet, angelic cuteness that causes confusion."
+677,SNUGGLESQUASH,Snuggle Squash,042,70,FAIRY,Physical,100,15,100,NearOther,0,abef,"Gives the opponent a constricting hug. Lowers target's Attack."
 #-------------------------------
 130,FOCUSPUNCH,Focus Punch,115,150,FIGHTING,Physical,100,20,0,NearOther,-3,abfj,"The user focuses its mind before launching a punch. It will fail if the user is hit before it is used."
 131,HIGHJUMPKICK,High Jump Kick,10B,130,FIGHTING,Physical,90,10,0,NearOther,0,abef,"The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead."
