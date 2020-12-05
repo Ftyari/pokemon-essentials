@@ -601,8 +601,8 @@ class PokemonSummary_Scene
                         _INTL("Hates to lose."),
                         _INTL("Somewhat stubborn.")
                        ][bestiv*5+@pokemon.iv[bestiv]%5]
-      memo += sprintf("<c3=5A5A5A,A0A0A0>%s\n",characteristic)	
-      memo += sprintf("<c3=7A31D8,BEA2D5>Happiness:<c3=5A5A5A,A0A0A0> %s.\n",@pokemon.happiness)	  
+      memo += sprintf("<c3=5A5A5A,A0A0A0>%s\n",characteristic)
+      memo += sprintf("<c3=7A31D8,BEA2D5>Happiness:<c3=5A5A5A,A0A0A0> %s.\n",@pokemon.happiness)
     end
     # Write all text
     drawFormattedTextEx(overlay,232,78,268,memo)
@@ -657,7 +657,7 @@ class PokemonSummary_Scene
       pbDrawImagePositions(overlay,imagepos)
     end
   end
-  
+
   def drawPageFour
     overlay = @sprites["overlay"].bitmap
     base   = Color.new(240,240,240)
@@ -706,7 +706,7 @@ class PokemonSummary_Scene
       ]
       pbDrawImagePositions(overlay,imagepos)
     end
-  end 
+  end
 
   def drawPageFive
     overlay = @sprites["overlay"].bitmap

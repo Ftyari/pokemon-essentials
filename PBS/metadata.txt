@@ -177,8 +177,37 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [075]
-# Lambent Hollow
+# Asteria Hollow
 SnapEdges = true
 Bicycle = false
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[077]
+# Noctum Nightclub
+SnapEdges = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[080]
+# Agath's Park
+SnapEdges = true
+Weather = Rain,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[081]
+# Asgath Meadow
+SnapEdges = true
+Weather = Rain,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[082]
+# Eos Island
+SnapEdges = true
+Weather = Snow,100
 Outdoor = true
 ShowArea = true

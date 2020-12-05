@@ -92,3 +92,22 @@ Land
     NUZLEAF,20
     NUZLEAF,21
     NUZLEAF,21
+#-------------------------------
+082 # Eos Island
+25,10,10
+Land
+    SNOVER,21
+    CUBCHOO,21
+    SNOVER,22
+    CUBCHOO,22
+    DELIBIRD,23
+    DELIBIRD,24
+    SNOVER,23
+    CUBCHOO,23
+    DELIBIRD,24
+    DELIBIRD,25
+    DELIBIRD,25
+    DELIBIRD,25
+OldRod
+    SEEL,20
+    SEEL,21,23
