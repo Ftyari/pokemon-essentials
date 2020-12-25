@@ -249,6 +249,11 @@ Events.onWildPokemonCreate+=proc {|sender,e|
     when 60 #Fomantis-2. «Dex Number: 753.»
      pokemon.pbLearnMove(:WEATHERBALL)
      pokemon.pbLearnMove(:AROMATHERAPY)
+   when 61 #Surskit. «Dex Number: 283.»
+     pokemon.pbLearnMove(:HYDROPUMP)
+     pokemon.pbLearnMove(:POWERSPLIT)
+     pokemon.pbLearnMove(:MUDSHOT)
+     pokemon.pbLearnMove(:SIGNALBEAM)
     end
 }
 

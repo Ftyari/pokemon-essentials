@@ -93,6 +93,38 @@ Land
     NUZLEAF,21
     NUZLEAF,21
 #-------------------------------
+074 # Marina Plaza
+25,10,10
+Land
+    LOMBRE,21
+    SWADLOON,21
+    LOMBRE,22
+    SWADLOON,22
+    LOMBRE,23
+    SWADLOON,23
+    VIVILLON,23
+    VIVILLON,23
+    VIVILLON,24
+    VIVILLON,24
+    VIVILLON,25
+    VIVILLON,25
+#-------------------------------
+080 # Agath's Park
+25,10,10
+Land
+    WEEPINBELL,21
+    NUZLEAF,21
+    LINOONE,21
+    LINOONE,21
+    WEEPINBELL,22
+    NUZLEAF,22
+    LINOONE,22
+    LINOONE,22
+    WEEPINBELL,23
+    NUZLEAF,23
+    WEEPINBELL,24
+    NUZLEAF,24
+#-------------------------------
 082 # Eos Island
 25,10,10
 Land

@@ -550,6 +550,7 @@
 459,TM99,TM99,TM99s,4,1000,"The user damages opposing Pokémon by emitting a powerful flash.",3,0,0,DAZZLINGGLEAM
 460,TM100,TM100,TM100s,4,3000,"The user soars, then strikes on the second turn. It can also be used to fly to any familiar town.",3,0,0,FLY
 497,TM101,TM101,TM101s,4,3000,"The user charges at the opponent and gives them a constricting hug; lowers Attack.",3,0,0,SNUGGLESQUASH
+498,TM102,TM102,TM102s,4,3000,"The user exhales a chilling gust at the opponent; May freeze.",3,0,0,FAIRYBREATH
 #---------------------------------------------------------------------------
 #                     » Drinks (461-465)(486) « 
 #---------------------------------------------------------------------------

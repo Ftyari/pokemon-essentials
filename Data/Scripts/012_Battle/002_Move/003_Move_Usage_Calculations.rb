@@ -25,6 +25,14 @@ class PokeBattle_Move
         @powerBoost = false
       end
     end
+    case @battle.field.terrain # Anchor so I can remove this when it fucks up.
+    when PBBattleTerrains::Electric
+      if isConst?(ret,PBTypes,:STEEL) && damagingMove?
+        ret =  getConst(PBTypes,:ELECTRIC)
+        powerBoost = false
+        @battle.pbDisplay(_INTL("The terrain charged up the attack!"))
+      end
+    end # End of anchor so I can remove this when it fucks up.
     return ret
   end
 
@@ -336,20 +344,64 @@ class PokeBattle_Move
         multipliers[BASE_DMG_MULT] /= 3
       end
     end
-    # Terrain moves
+    # Terrain moves. Modified by Scyl.
     if user.affectedByTerrain?
       case @battle.field.terrain
       when PBBattleTerrains::Electric
         if isConst?(type,PBTypes,:ELECTRIC)
           multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
         end
       when PBBattleTerrains::Grassy
         if isConst?(type,PBTypes,:GRASS)
           multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
+        end
+        if isConst?(type,PBTypes,:BUG) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
+        end
+        if specialMove? && soundMove?
+          multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The attack reverberates!"))
+        end
+        if isConst?(type,PBTypes,:GROUND)
+          multipliers[BASE_DMG_MULT] *= 0.3
+          @battle.pbDisplay(_INTL("The terrain weakened the attack..."))
+        end
+        if isConst?(type,PBTypes,:WATER) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 0.3
+          @battle.pbDisplay(_INTL("The terrain weakened the attack..."))
+        end
+        if isConst?(type,PBTypes,:ELECTRIC) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 0.3
+          @battle.pbDisplay(_INTL("The terrain weakened the attack..."))
         end
       when PBBattleTerrains::Psychic
         if isConst?(type,PBTypes,:PSYCHIC)
           multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
+        end
+        if isConst?(type,PBTypes,:DARK) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 0.3
+          @battle.pbDisplay(_INTL("The terrain weakened the attack..."))
+        end
+        if isConst?(type,PBTypes,:GHOST) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 0.3
+          @battle.pbDisplay(_INTL("The terrain weakened the attack..."))
+        end
+      when PBBattleTerrains::Misty
+        if isConst?(type,PBTypes,:FAIRY) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
+        end
+        if isConst?(type,PBTypes,:ICE) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
+        end
+        if isConst?(type,PBTypes,:FAIRY) && specialMove?
+          multipliers[BASE_DMG_MULT] *= 1.5
+          @battle.pbDisplay(_INTL("The terrain augmented the attack!"))
         end
       end
     end

@@ -274,8 +274,8 @@ class Window_PokemonMart < Window_DrawableCommand
     @adapter=adapter
     super(x,y,width,height,viewport)
     @selarrow=AnimatedBitmap.new("Graphics/Pictures/martSel")
-    @baseColor=Color.new(88,88,80)
-    @shadowColor=Color.new(168,184,184)
+    @baseColor=Color.new(240,240,240)
+    @shadowColor=Color.new(120,120,120)
     self.windowskin=nil
   end
 
@@ -351,8 +351,8 @@ class PokemonMart_Scene
     @sprites["itemtextwindow"].y=Graphics.height-96-16
     @sprites["itemtextwindow"].width=Graphics.width-64
     @sprites["itemtextwindow"].height=128
-    @sprites["itemtextwindow"].baseColor=Color.new(248,248,248)
-    @sprites["itemtextwindow"].shadowColor=Color.new(0,0,0)
+    @sprites["itemtextwindow"].baseColor=Color.new(240,240,240)
+    @sprites["itemtextwindow"].shadowColor=Color.new(120,120,120)
     @sprites["itemtextwindow"].visible=true
     @sprites["itemtextwindow"].viewport=@viewport
     @sprites["itemtextwindow"].windowskin=nil
@@ -825,10 +825,10 @@ def pbPokemonMart(stock,speech=nil,cantsell=false)
       screen = PokemonMartScreen.new(scene,stock)
       screen.pbSellScreen
     else
-      pbMessage(_INTL("Please come again!"))
+      pbMessage(_INTL("\\c[2]Please come again!"))
       break
     end
-    cmd = pbMessage(_INTL("Is there anything else I can help you with?"),
+    cmd = pbMessage(_INTL("\\c[2]Is there anything else I can help you with?"),
        commands,cmdQuit+1)
   end
   $game_temp.clear_mart_prices

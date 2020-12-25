@@ -2602,3 +2602,28 @@ end
 #       Actually, you might as well use high numbers like 500+ (up to FFFF),
 #       just to make sure later additions to Essentials don't clash with your
 #       new effects.
+
+#===============================================================================
+# Power is doubled on any Terrain. Type changes depending on said Terrain. (Gaia's Heartbeat)
+#===============================================================================
+class PokeBattle_Move_200 < PokeBattle_Move
+  def pbBaseDamage(baseDmg,user,target)
+    baseDmg *= 2 if @battle.pbWeather!=PBBattleTerrains::None
+    return baseDmg
+  end
+
+  def pbBaseType(user)
+    ret = getID(PBTypes,:NORMAL)
+    case @battle.field.terrain
+    when PBBattleTerrains::Electric
+      ret = getConst(PBTypes,:ELECTRIC) || ret
+    when PBBattleTerrains::Grassy
+      ret = getConst(PBTypes,:GRASS) || ret
+    when PBBattleTerrains::Misty
+      ret = getConst(PBTypes,:FAIRY) || ret
+    when PBBattleTerrains::Psychic
+      ret = getConst(PBTypes,:Psychic) || ret
+    end
+    return ret
+  end
+end

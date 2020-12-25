@@ -42,6 +42,14 @@ class PokeBattle_Move_003 < PokeBattle_SleepMove
     return false
   end
 
+  def pbBaseAccuracy(user,target)
+    if isConst?(@id,PBMoves,:HYPNOSIS) && @battle.field.terrain==PBBattleTerrains::Psychic
+      @battle.pbDisplay(_INTL("And with concentration...!"))
+      return 0
+    end
+      return super
+  end
+
   def pbEndOfMoveUsageEffect(user,targets,numHits,switchedBattlers)
     return if numHits==0
     return if user.fainted? || user.effects[PBEffects::Transform]
@@ -572,16 +580,22 @@ end
 
 
 #===============================================================================
-# Increases the user's Attack by 1 stage.
+# Increases the user's Attack by 1 stage. If the move is Meditate and the terrain is Psychic, it raises Attack by 3 stages. Modified by Scyl for Updated Terrain Effects.
 #===============================================================================
 class PokeBattle_Move_01C < PokeBattle_StatUpMove
   def initialize(battle,move)
     super
     @statUp = [PBStats::ATTACK,1]
   end
+
+  def pbOnStartUse(user,targets)
+  increment = 1
+  if isConst?(@id,PBMoves,:MEDITATE) && @battle.field.terrain==PBBattleTerrains::Psychic
+  	increment = 3
+  end
+  @statUp[1] = @statUp[3] = increment
+  end
 end
-
-
 
 #===============================================================================
 # Increases the user's Defense by 1 stage. (Harden, Steel Wing, Withdraw)
@@ -737,7 +751,7 @@ end
 
 #===============================================================================
 # Increases the user's Attack and Sp. Attack by 1 stage each.
-# In sunny weather, increases are 2 stages each instead. (Growth)
+# In sunny weather and on Grassy Terrain, increases are 2 stages each instead. (Growth)
 #===============================================================================
 class PokeBattle_Move_028 < PokeBattle_MultiStatUpMove
   def initialize(battle,move)
@@ -748,7 +762,8 @@ class PokeBattle_Move_028 < PokeBattle_MultiStatUpMove
   def pbOnStartUse(user,targets)
     increment = 1
     if @battle.pbWeather==PBWeather::Sun ||
-       @battle.pbWeather==PBWeather::HarshSun
+       @battle.pbWeather==PBWeather::HarshSun ||
+       @battle.field.terrain==PBBattleTerrains::Grassy
       increment = 2
     end
     @statUp[1] = @statUp[3] = increment
@@ -796,16 +811,22 @@ end
 
 
 #===============================================================================
-# Increases the user's Sp. Attack and Sp. Defense by 1 stage each. (Calm Mind)
+# Increases the user's Sp. Attack and Sp. Defense by 1 stage each normally, but on Psychic Terrain, it raises both stats by 2 stages. Modified by Scyl for Updated Terrain Effects. (Calm Mind)
 #===============================================================================
 class PokeBattle_Move_02C < PokeBattle_MultiStatUpMove
   def initialize(battle,move)
     super
     @statUp = [PBStats::SPATK,1,PBStats::SPDEF,1]
   end
+
+    def pbOnStartUse(user,targets)
+    increment = 1
+    if @battle.field.terrain==PBBattleTerrains::Psychic
+      increment = 2
+    end
+    @statUp[1] = @statUp[3] = increment
+  end
 end
-
-
 
 #===============================================================================
 # Increases the user's Attack, Defense, Speed, Special Attack and Special Defense
@@ -1239,16 +1260,22 @@ end
 
 
 #===============================================================================
-# Decreases the target's Special Defense by 1 stage.
+# Decreases the target's Special Defense by 1 stage; if the move is Focus Blast and the terrain is Psychic, its accuracy becomes perfect..
 #===============================================================================
 class PokeBattle_Move_046 < PokeBattle_TargetStatDownMove
   def initialize(battle,move)
     super
     @statDown = [PBStats::SPDEF,1]
   end
-end
 
-
+  def pbBaseAccuracy(user,target)
+    if isConst?(@id,PBMoves,:FOCUSBLAST) && @battle.field.terrain==PBBattleTerrains::Psychic
+      @battle.pbDisplay(_INTL("And with concentration...!"))
+      return 0
+    end
+      return super
+    end
+  end
 
 #===============================================================================
 # Decreases the target's accuracy by 1 stage.

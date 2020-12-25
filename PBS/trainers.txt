@@ -249,14 +249,156 @@ Pokemon = MIGHTYENA,22
 Pokemon = LINOONE,22
     Moves = HEADBUTT,PLAYROUGH,EXTREMESPEED,SEEDBOMB
     Ability = 0
-	Item = SITRUSBERRY
+    Item = SITRUSBERRY
     Nature = ADAMANT
     IV = 31
     EV = 50,50,50,50,0,50
 Pokemon = DRUDDIGON,23
     Moves = SLASH,HONECLAWS,SUCKERPUNCH,ROCKSLIDE
     Ability = 0
-	Item = ROCKYHELMET
+    Item = ROCKYHELMET
     Nature = IMPISH
     IV = 31
     EV = 50,50,50,0,0,50
+#-------------------------------
+[GYMLEADER_Vivica,Vivica]
+Pokemon = GIRAFARIG,25
+Pokemon = HERDIER,25
+Pokemon = VIGOROTH,25
+Pokemon = HELIOLISK,25
+Pokemon = STARAVIA,25
+Pokemon = STUFFUL,25
+#-------------------------------
+[GAMEYOUNGSTER,Ronny]
+Pokemon = GEODUDE,10
+Pokemon = GEODUDE,11
+Pokemon = GEODUDE,12
+Pokemon = GEODUDE,10
+#-------------------------------
+[GAMEYOUNGSTER,Tony]
+Pokemon = GEODUDE,15
+#-------------------------------
+[GAMELEADER_ROXANNE,Roxanne]
+Pokemon = GEODUDE,13
+Pokemon = LILEEP,14
+Pokemon = PROBOPASS,15
+#-------------------------------
+[POKEMONBREEDER,Janet]
+Pokemon = AUDINO,18
+Pokemon = CHANSEY,18
+    Moves = ICEBEAM,THUNDERBOLT,FLAMETHROWER,SECRETPOWER
+#-------------------------------
+[HIKER,Rockington]
+Pokemon = ROCKRUFF,23
+    Moves = BITE,DIG,ROCKTOMB,SANDATTACK
+    Nature = ADAMANT
+    IV = 31
+    EV = 75,100,75,100,0,75
+Pokemon = DWEBBLE,24
+    Moves = COUNTER,SMACKDOWN,BUGBITE,WITHDRAW
+    Nature = IMPISH
+    IV = 31
+    EV = 100,100,100,0,0,100
+Pokemon = LYCANROC,25
+    Moves = BITE,ACCELEROCK,ROCKTOMB,BRICKBREAK
+    Nature = ADAMANT
+    IV = 31
+    EV = 75,100,75,100,0,75
+#-------------------------------
+[CRUSHGIRL,Xi-Xi]
+Pokemon = HARIYAMA,24
+    Moves = COUNTER,FAKEOUT,FORCEPALM,KNOCKOFF
+    Nature = IMPISH
+    IV = 31
+    EV = 100,100,100,0,0,100
+Pokemon = MEDITITE,24
+    Moves = FAKEOUT,FIREPUNCH,ICEPUNCH,BRICKBREAK
+    Ability = 0
+    Nature = ADAMANT
+    IV = 31
+    EV = 75,100,75,100,0,75
+#-------------------------------
+[FISHERMAN,Rickard]
+Pokemon = GYARADOS,25
+    Moves = BITE,THRASH,BOUNCE,BULLDOZE
+    Nature = ADAMANT
+    IV = 31
+    EV = 75,100,75,100,0,75
+Pokemon = GYARADOS,25
+    Moves = BITE,THRASH,BOUNCE,BULLDOZE
+    Nature = JOLLY
+    IV = 31
+    EV = 75,100,75,100,0,75
+#-------------------------------
+[PSYCHICF,Rea]
+Pokemon = VENONAT,25
+    Moves = SIGNALBEAM,PSYBEAM,GIGADRAIN,STUNSPORE
+    Nature = MODEST
+    IV = 31
+    EV = 0,0,75,100,100,75
+Pokemon = KIRLIA,25
+    Moves = PSYBEAM,SHADOWBALL,LIGHTSCREEN,ENERGYBALL
+    Nature = MODEST
+    IV = 31
+    EV = 0,0,75,100,100,75
+Pokemon = XATU,25
+    Moves = AIRSLASH,TAILWIND,DAZZLINGGLEAM,GRASSKNOT
+    Nature = MODEST
+    IV = 31
+    EV = 0,0,75,100,100,75
+#-------------------------------
+[PSYCHICM,Rayton]
+Pokemon = KADABRA,25
+    Moves = PSYBEAM,SHADOWBALL,RECOVER,ENERGYBALL
+    Nature = TIMID
+    IV = 31
+    EV = 0,0,75,100,100,75
+Pokemon = EXEGGUTOR,25
+    Moves = GIGADRAIN,PSYSHOCK,ENERGYBALL,MOONLIGHT
+    Nature = MODEST
+    IV = 31
+    EV = 75,0,75,0,100,75
+Pokemon = BUTTERFREE,25
+    Moves = GIGADRAIN,PSYBEAM,SILVERWIND,SLEEPPOWDER
+    Nature = TIMID
+    IV = 31
+    EV = 0,0,75,100,100,75
+Pokemon = SPOINK,25
+    Moves = MIRRORCOAT,PSYBEAM,AMNESIA,GRASSKNOT
+    Nature = CALM
+    IV = 31
+    EV = 75,0,75,0,100,75
+#-------------------------------
+[NEMOPHILIST,Tegalia]
+Pokemon = DEERLING,25
+    Moves = TAKEDOWN,JUMPKICK,FEINTATTACK,HEADBUTT
+    Nature = ADAMANT
+    IV = 31
+    EV = 75,100,75,100,0,75
+Pokemon = LUDICOLO,25
+    Moves = GIGADRAIN,NATUREPOWER,BUBBLEBEAM,UPROAR
+    Nature = TIMID
+    IV = 31
+    EV = 0,0,75,100,100,75
+Pokemon = ROSELIA,25
+    Moves = GIGADRAIN,NATUREPOWER,GROWTH,EXTRASENSORY
+    Nature = BOLD
+    IV = 31
+    EV = 75,0,75,100,100,75
+Pokemon = IVYSAUR,25
+    Moves = GIGADRAIN,SLUDGE,GROWTH,NATUREPOWER
+    Nature = BOLD
+    IV = 31
+    EV = 75,0,75,100,100,75
+#-------------------------------
+[HIKER,Benni]
+Pokemon = LUNATONE,25
+    Moves = POWERGEM,PSYSHOCK,MOONBLAST,COSMICPOWER
+    Nature = CALM
+    IV = 31
+    EV = 100,0,100,0,100,100
+Pokemon = SOLROCK,25
+    Moves = ROCKSLIDE,FLAREBLITZ,ACROBATICS,REFLECT
+    Nature = IMPISH
+    IV = 31
+    EV = 100,100,100,0,0,100

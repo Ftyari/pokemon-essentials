@@ -350,14 +350,14 @@ class FightMenuDisplay < BattleMenuBase
       x = button.x-self.x+button.src_rect.width/2
       y = button.y-self.y+8
       moveNameBase = TEXT_BASE_COLOR
-      if m.type>=0
+      #if m.type>=0
         # NOTE: This takes a colour from a particular pixel in the button
         #       graphic and makes the move name's base colour that same colour.
         #       The pixel is at coordinates 10,34 in the button box. If you
         #       change the graphic, you may want to change/remove the below line
         #       of code to ensure the font is an appropriate colour.
-        moveNameBase = button.bitmap.get_pixel(10,button.src_rect.y+34)
-      end
+        #moveNameBase = button.bitmap.get_pixel(10,button.src_rect.y+34)
+      #end
       textPos.push([m.name,x,y,2,moveNameBase,TEXT_SHADOW_COLOR])
     end
     pbDrawTextPositions(@overlay.bitmap,textPos)

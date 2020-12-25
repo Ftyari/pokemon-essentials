@@ -134,6 +134,7 @@
 128,MOONLIGHT,Moonlight,0D8,0,FAIRY,Status,0,5,0,User,0,d,"The user restores its own HP. The amount of HP regained varies with the weather."
 129,SWEETKISS,Sweet Kiss,013,0,FAIRY,Status,75,10,0,NearOther,0,bce,"The user kisses the target with a sweet, angelic cuteness that causes confusion."
 677,SNUGGLESQUASH,Snuggle Squash,042,70,FAIRY,Physical,100,15,100,NearOther,0,abef,"Gives the opponent a constricting hug. Lowers target's Attack."
+678,FAIRYBREATH,Fairy Breath,00C,70,FAIRY,Special,100,10,10,NearOther,0,bef,"Exhales a chilling gust that may freeze the opponent."
 #-------------------------------
 130,FOCUSPUNCH,Focus Punch,115,150,FIGHTING,Physical,100,20,0,NearOther,-3,abfj,"The user focuses its mind before launching a punch. It will fail if the user is hit before it is used."
 131,HIGHJUMPKICK,High Jump Kick,10B,130,FIGHTING,Physical,90,10,0,NearOther,0,abef,"The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead."
@@ -329,6 +330,7 @@
 316,SANDATTACK,Sand Attack,047,0,GROUND,Status,100,15,0,NearOther,0,bce,"Sand is hurled in the target's face, reducing its accuracy."
 317,SHOREUP,Shore Up,16D,0,GROUND,Status,0,10,0,User,0,d,"The user regains up to half of its max HP. It restores more HP in a sandstorm."
 318,SPIKES,Spikes,103,0,GROUND,Status,0,20,0,FoeSide,0,c,"The user lays a trap of spikes at the foe's feet. The trap hurts foes that switch into battle."
+679,GAIASHEARTBEAT,Gaia's Heartbeat,200,50,GROUND,Special,100,10,0,NearOther,0,befn,"An attack move that varies in power and type depending on the terrain."
 #-------------------------------
 319,FREEZESHOCK,Freeze Shock,0C5,140,ICE,Physical,90,5,30,NearOther,0,bef,"On the second turn, the user hits the foe with electrically charged ice. It may also paralyze the foe."
 320,ICEBURN,Ice Burn,0C6,140,ICE,Special,90,5,30,NearOther,0,bef,"On the second turn, an ultracold, freezing wind surrounds the foe. This may leave it with a burn."

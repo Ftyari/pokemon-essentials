@@ -64,6 +64,10 @@ Weather = Rain,100
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[010]
+# Intercity Parking Lot
+BattleBack = asteriacity
+#-------------------------------
 [011]
 # Oraia Gateway
 #-------------------------------
@@ -171,6 +175,7 @@ SnapEdges = true
 [074]
 # Marina Plaza
 SnapEdges = true
+BattleBack = asteria
 Weather = Rain,100
 Bicycle = true
 Outdoor = true
@@ -192,6 +197,7 @@ ShowArea = true
 [080]
 # Agath's Park
 SnapEdges = true
+BattleBack = asteria
 Weather = Rain,100
 Bicycle = true
 Outdoor = true
@@ -200,6 +206,7 @@ ShowArea = true
 [081]
 # Asgath Meadow
 SnapEdges = true
+BattleBack = asteria
 Weather = Rain,100
 Bicycle = true
 Outdoor = true

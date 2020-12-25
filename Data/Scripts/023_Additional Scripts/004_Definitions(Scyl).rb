@@ -1,6 +1,6 @@
   def pbReturnToPlayerHouse
     if $scene.is_a?(Scene_Map)
-      pbFadeOutIn {	
+      pbFadeOutIn {
 	  pbBGSFade(1.0)
       $game_temp.player_transferring = true
       $game_temp.player_new_map_id = 69
@@ -10,6 +10,6 @@
       $scene.transfer_player
 	  $game_map.autoplay
 	  $game_map.refresh
-      }	  
+      }
     end
-  end	  
+  end

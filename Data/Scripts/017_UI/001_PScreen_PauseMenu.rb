@@ -120,13 +120,13 @@ class PokemonPauseMenu
     commands[cmdTrainer = commands.length]  = $Trainer.name
     case pbGetTimeNow.hour
       when 0
-          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: 12:00 a.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
-      when 6
-          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: {3}:00 a.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
+        @scene.pbShowInfo(_INTL("Date: {1}/{2}, {4}.\nTime: 12:00 a.m.\nMoney: {3}$",pbGetTimeNow.month,pbGetTimeNow.day,$Trainer.money.to_s_formatted,pbGetTimeNow.year))
+      when 1..11
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}, {5}.\nTime: {3}:00 a.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted,pbGetTimeNow.year))
       when 12
-          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: {3}:00 p.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
-      when 18
-          @scene.pbShowInfo(_INTL("Date: {1}/{2}.\nTime: 6:00 p.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted))
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}, {5}.\nTime: {3}:00 p.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour,$Trainer.money.to_s_formatted,pbGetTimeNow.year))
+      when 13..23
+          @scene.pbShowInfo(_INTL("Date: {1}/{2}, {5}.\nTime: {3}:00 p.m.\nMoney: {4}$",pbGetTimeNow.month,pbGetTimeNow.day,pbGetTimeNow.hour-12,$Trainer.money.to_s_formatted,pbGetTimeNow.year))
     end
     if pbInSafari?
       if SAFARI_STEPS<=0
@@ -151,7 +151,7 @@ class PokemonPauseMenu
     end
     commands[cmdOption = commands.length]   = _INTL("Options")
     commands[cmdDebug = commands.length]    = _INTL("Debug") if $DEBUG
-    commands[cmdReturnHome = commands.length]  = _INTL("Return Home") if $game_switches[70]
+    commands[cmdReturnHome = commands.length]  = _INTL("Return Home") if $game_switches[70] && !$game_switches[107]
     commands[cmdEndGame = commands.length]  = _INTL("Quit Game")
     loop do
       command = @scene.pbShowCommands(commands)

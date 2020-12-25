@@ -1376,15 +1376,15 @@ def pbReceiveItem(item,quantity=1)
   pocket = pbGetPocket(item)
   meName = (pbIsKeyItem?(item)) ? "Key item get" : "Item get"
   if isConst?(item,PBItems,:LEFTOVERS)
-    pbMessage(_INTL("\\me[{1}]You obtained some \\c[1]{2}\\c[0]!\\wtnp[30]",meName,itemname))
+    pbMessage(_INTL("\\me[{1}]You've obtained some \\c[1]{2}\\c[0]!\\wtnp[30]",meName,itemname))
   elsif pbIsMachine?(item)   # TM or HM
-    pbMessage(_INTL("\\me[{1}]You obtained \\c[1]{2} {3}\\c[0]!\\wtnp[30]",meName,itemname,PBMoves.getName(pbGetMachine(item))))
+    pbMessage(_INTL("\\me[{1}]You've obtained \\c[1]{2} {3}\\c[0]!\\wtnp[30]",meName,itemname,PBMoves.getName(pbGetMachine(item))))
   elsif quantity>1
-    pbMessage(_INTL("\\me[{1}]You obtained {2} \\c[1]{3}\\c[0]!\\wtnp[30]",meName,quantity,itemname))
+    pbMessage(_INTL("\\me[{1}]You've obtained {2} \\c[1]{3}\\c[0]!\\wtnp[30]",meName,quantity,itemname))
   elsif itemname.starts_with_vowel?
-    pbMessage(_INTL("\\me[{1}]You obtained an \\c[1]{2}\\c[0]!\\wtnp[30]",meName,itemname))
+    pbMessage(_INTL("\\me[{1}]You've obtained an \\c[1]{2}\\c[0]!\\wtnp[30]",meName,itemname))
   else
-    pbMessage(_INTL("\\me[{1}]You obtained a \\c[1]{2}\\c[0]!\\wtnp[30]",meName,itemname))
+    pbMessage(_INTL("\\me[{1}]You've obtained a \\c[1]{2}\\c[0]!\\wtnp[30]",meName,itemname))
   end
   if $PokemonBag.pbStoreItem(item,quantity)   # If item can be added
     pbMessage(_INTL("You put the {1} away\\nin the <icon=bagPocket{2}>\\c[1]{3} Pocket\\c[0].",
