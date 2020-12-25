@@ -14,6 +14,7 @@ LoseText = "My plan for revenge will not end here!"
 Pokemon = ROCKRUFF,5
 #-------------------------------
 [SCIENTIST,Kalvin]
+LoseText = "A shocking defeat!"
 Pokemon = BLITZLE,7
 Pokemon = ELEKID,7
 #-------------------------------
@@ -93,55 +94,67 @@ Pokemon = BULBASAUR,7
     Moves = MAGICALLEAF,CHARM,LEECHSEED,SLUDGE
 #-------------------------------
 [HIKER,Rubert]
+LoseText = "Mt. Mesoe is truly an amazing place. Wouldn't you agree?"
 Pokemon = BONSLY,8
 Pokemon = PINECO,8
 #-------------------------------
 [NEMOPHILIST,Liah]
+LoseText = "Ah, the fresh air gives me strength... Even when I lose."
 Pokemon = VENIPEDE,8
 Pokemon = SEWADDLE,8
 #-------------------------------
 [SCIENTISTF,Marie]
+LoseText = "I'm currently studying the effects of different terrains."
 Pokemon = VENONAT,8
 Pokemon = MAREEP,8
 Pokemon = ZUBAT,8
 #-------------------------------
 [CRUSHGIRL,Qira]
+LoseText = "I've been beaten, but I shall use this as a chance to ascend past my current form!"
 Pokemon = SCRAGGY,9
 Pokemon = OSHAWOTT,9
 #-------------------------------
 [SCIENTIST,Kory]
+LoseText = "Feels nice to get out of the office, I'll tell you what."
 Pokemon = DEERLING,8
 Pokemon = ELECTRIKE,8
 #-------------------------------
 [BLACKBELT,Ron]
+LoseText = "I won't accept this..."
 Pokemon = CHESPIN,9
 Pokemon = SANDSHREW,9
 #-------------------------------
 [HIKER,Monty]
+LoseText = "The crystals in Mt. Mesoe are some of the most beautiful things I've ever seen."
 Pokemon = TIMBURR,11
 Pokemon = GEODUDE,10
     Form = 1
     Moves = CHARGE,ROLLOUT,ROCKPOLISH,SPARK
 #-------------------------------
 [BLACKBELT,Chaz]
+LoseText = "Time to go find a waterfall for me to train under."
 Pokemon = MACHOP,12
 Pokemon = RIOLU,12
 #-------------------------------
 [DOCTOR,Tom]
+LoseText = "Are you sure you need my help?"
 Pokemon = AUDINO,15
 Pokemon = SPRITZEE,15
 #-------------------------------
 [GUITARIST,Lola]
+LoseText = "I love coming out here; it's the perfect place to practice!"
 Pokemon = WHISMUR,13
     Moves = HOWL,POUND,ECHOEDVOICE,ASTONISH
 Pokemon = LOMBRE,14
     Moves = REST,SLEEPTALK,BUBBLE,ABSORB
 #-------------------------------
 [CRUSHGIRL,Chana]
+LoseText = "One day, I'll get you back for this."
 Pokemon = SNUBBULL,15
 Pokemon = STUFFUL,15
 #-------------------------------
 [WANDERER,Ilyssa,1]
+LoseText = "Oh well, unsurprising."
 Pokemon = BOUNSWEET,17
     Gender = female
     Moves = PLAYROUGH,FEINT,RAZORLEAF,SYNTHESIS
@@ -159,6 +172,7 @@ Pokemon = TYMPOLE,16
     EV = 252,0,0,0,252,4
 #-------------------------------
 [CUBANDMA,Kangaskhan & Litleo]
+LoseText = "Kanga..."
 Pokemon = LITLEO,16
     Gender = male
     Moves = EMBER,NOBLEROAR,HEADBUTT,WORKUP
@@ -190,50 +204,61 @@ Pokemon = MAGIKARP,15
     EV = 4,252,0,252,0,0
 #-------------------------------
 [DOCTOR,Alex]
+LoseText = "Very well then."
 Pokemon = COMFEY,15
 Pokemon = AUDINO,15
 #-------------------------------
 [PRESCHOOLER,Lily]
+LoseText = "Oh no! Plusle and Minun are down!"
 Pokemon = PLUSLE,15
 Pokemon = MINUN,15
 #-------------------------------
 [NEMOPHILIST,Kira]
+LoseText = "Maybe I just have weird tastes, I guess."
 Pokemon = BEAUTIFLY,15
 Pokemon = ROSELIA,15
 #-------------------------------
 [SCIENTIST,Daz]
+LoseText = "This place feels like home, flaws and all."
 Pokemon = EMOLGA,17
 Pokemon = LUXIO,18
 #-------------------------------
 [BURGLAR,Kyle]
+LoseText = "I wouldn't recommend heading down further..."
 Pokemon = RATTATA,18
 Pokemon = KOFFING,17
 #-------------------------------
 [CRUSHGIRL,Xia]
+LoseText = "I couldn't win, because I was distracted by the awful smell..."
 Pokemon = CRABRAWLER,18
 Pokemon = MONFERNO,18
 Pokemon = CORPHISH,18
 #-------------------------------
 [BURGLAR,Ian]
+LoseText = "Try to stay far away from the slums. I'm saying it because if I don't, I might feel bad later."
 Pokemon = GROWLITHE,19
 Pokemon = YAMASK,19
 Pokemon = DUSTOX,19
 #-------------------------------
 [SCIENTISTF,Becka]
+LoseText = "I had heard that you needed a certain key in order to get in..."
 Pokemon = MAGNEMITE,19
 Pokemon = BLITZLE,19
 Pokemon = GEODUDE,19
 #-------------------------------
 [ROUGHNECK,Brandon]
+LoseText = "And you definitely don't battle like you're from here either."
 Pokemon = VENIPEDE,19
 Pokemon = VENONAT,19
 Pokemon = EKANS,19
 #-------------------------------
 [ROUGHNECK,Dayton]
+LoseText = "Fine, you've earned your way in."
 Pokemon = CROAGUNK,18
 Pokemon = VIGOROTH,19
 #-------------------------------
 [MASKEDMAN,Regale]
+LoseText = "Th-- This can't be how my story ends..."
 Pokemon = GLOOM,22
     Moves = GIGADRAIN,CHARM,STRENGTHSAP,VENOSHOCK
     Ability = 2
@@ -262,6 +287,7 @@ Pokemon = DRUDDIGON,23
     EV = 50,50,50,0,0,50
 #-------------------------------
 [GYMLEADER_Vivica,Vivica]
+LoseText = "I'm not very good at this whole Gym Leader thing, am I?"
 Pokemon = GIRAFARIG,25
 Pokemon = HERDIER,25
 Pokemon = VIGOROTH,25
@@ -284,11 +310,13 @@ Pokemon = LILEEP,14
 Pokemon = PROBOPASS,15
 #-------------------------------
 [POKEMONBREEDER,Janet]
+LoseText = "My darling Pokémon was always be here to cheer me up when we lose!"
 Pokemon = AUDINO,18
 Pokemon = CHANSEY,18
     Moves = ICEBEAM,THUNDERBOLT,FLAMETHROWER,SECRETPOWER
 #-------------------------------
 [HIKER,Rockington]
+LoseText = "A new man accepts all, including his most crushing defeats!"
 Pokemon = ROCKRUFF,23
     Moves = BITE,DIG,ROCKTOMB,SANDATTACK
     Nature = ADAMANT
@@ -306,6 +334,7 @@ Pokemon = LYCANROC,25
     EV = 75,100,75,100,0,75
 #-------------------------------
 [CRUSHGIRL,Xi-Xi]
+LoseText = "You Rattata! I'll return to claim your head on mantle one day! Figuratively, of course."
 Pokemon = HARIYAMA,24
     Moves = COUNTER,FAKEOUT,FORCEPALM,KNOCKOFF
     Nature = IMPISH
@@ -319,6 +348,7 @@ Pokemon = MEDITITE,24
     EV = 75,100,75,100,0,75
 #-------------------------------
 [FISHERMAN,Rickard]
+LoseText = "Heh, guess I washed out, huh?"
 Pokemon = GYARADOS,25
     Moves = BITE,THRASH,BOUNCE,BULLDOZE
     Nature = ADAMANT
@@ -331,6 +361,7 @@ Pokemon = GYARADOS,25
     EV = 75,100,75,100,0,75
 #-------------------------------
 [PSYCHICF,Rea]
+LoseText = "Maybe not this time, but another time, most certainly"
 Pokemon = VENONAT,25
     Moves = SIGNALBEAM,PSYBEAM,GIGADRAIN,STUNSPORE
     Nature = MODEST
@@ -348,6 +379,7 @@ Pokemon = XATU,25
     EV = 0,0,75,100,100,75
 #-------------------------------
 [PSYCHICM,Rayton]
+LoseText = "I've been blinded by your power that possesses no parallel."
 Pokemon = KADABRA,25
     Moves = PSYBEAM,SHADOWBALL,RECOVER,ENERGYBALL
     Nature = TIMID
@@ -370,6 +402,7 @@ Pokemon = SPOINK,25
     EV = 75,0,75,0,100,75
 #-------------------------------
 [NEMOPHILIST,Tegalia]
+LoseText = "I want to visit Route O-0 soon!"
 Pokemon = DEERLING,25
     Moves = TAKEDOWN,JUMPKICK,FEINTATTACK,HEADBUTT
     Nature = ADAMANT
@@ -392,6 +425,7 @@ Pokemon = IVYSAUR,25
     EV = 75,0,75,100,100,75
 #-------------------------------
 [HIKER,Benni]
+LoseText = "When you lose, you must utter a cry of defeat that shall forever be etched into the memories of your opponents!"
 Pokemon = LUNATONE,25
     Moves = POWERGEM,PSYSHOCK,MOONBLAST,COSMICPOWER
     Nature = CALM
