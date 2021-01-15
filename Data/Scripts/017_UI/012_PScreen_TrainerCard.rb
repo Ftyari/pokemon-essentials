@@ -16,9 +16,35 @@ class PokemonTrainerCard_Scene
     cardexists = pbResolveBitmap(sprintf("Graphics/Pictures/Trainer Card/card_f"))
     @sprites["card"] = IconSprite.new(0,0,@viewport)
     if $Trainer.female? && cardexists
-      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_f")
+      case $game_variables[67]
+        when 1
+          @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star1")
+        when 2
+          @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star2")
+        when 3
+          @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star3")
+        when 4
+          @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star4")
+        when 5
+          @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star5")
+        else
+          @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_f")
+      end
     else
-      @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card")
+      case $game_variables[67]
+      when 1
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star1")
+      when 2
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star2")
+      when 3
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star3")
+      when 4
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star4")
+      when 5
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card_star5")
+      else
+        @sprites["card"].setBitmap("Graphics/Pictures/Trainer Card/card")
+      end
     end
     @sprites["overlay"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
     pbSetSystemFont(@sprites["overlay"].bitmap)

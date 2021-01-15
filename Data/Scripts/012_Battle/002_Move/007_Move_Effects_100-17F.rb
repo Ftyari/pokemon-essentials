@@ -2613,7 +2613,7 @@ class PokeBattle_Move_200 < PokeBattle_Move
   end
 
   def pbBaseType(user)
-    ret = getID(PBTypes,:NORMAL)
+    ret = getID(PBTypes,:GROUND)
     case @battle.field.terrain
     when PBBattleTerrains::Electric
       ret = getConst(PBTypes,:ELECTRIC) || ret

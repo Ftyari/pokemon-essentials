@@ -42,6 +42,12 @@ LandNight
     SPRITZEE,4
     SPRITZEE,4
 #-------------------------------
+006 # South Asteria Suburbia
+25,10,10
+OldRod
+    FINNEON,2
+    FINNEON,3
+#-------------------------------
 028 # Route O-4
 25,10,10
 Land

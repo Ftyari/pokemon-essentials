@@ -254,6 +254,9 @@ Events.onWildPokemonCreate+=proc {|sender,e|
      pokemon.pbLearnMove(:POWERSPLIT)
      pokemon.pbLearnMove(:MUDSHOT)
      pokemon.pbLearnMove(:SIGNALBEAM)
+   when 62 #Litleo. «Dex Number: 667.»
+     pokemon.pbLearnMove(:YAWN)
+     pokemon.pbLearnMove(:ENTRAINMENT)
     end
 }
 
