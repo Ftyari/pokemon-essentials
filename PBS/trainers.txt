@@ -436,3 +436,16 @@ Pokemon = SOLROCK,25
     Nature = IMPISH
     IV = 31
     EV = 100,100,100,0,0,100
+#-------------------------------
+[HARLEQUIN,Ronald]
+Pokemon = RAICHU,1
+Pokemon = RAICHU,1
+Pokemon = RAICHU,1
+Pokemon = RAICHU,1
+Pokemon = RAICHU,1
+Pokemon = RAICHU,1
+#-------------------------------
+[PSYCHICF,Raphi]
+Pokemon = DUSKULL,26
+Pokemon = CHIMECHO,26
+Pokemon = MIENFOO,26

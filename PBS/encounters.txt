@@ -48,6 +48,22 @@ OldRod
     FINNEON,2
     FINNEON,3
 #-------------------------------
+008 # Satelo Slums
+25,10,10
+Land
+    DRIFLOON,24
+    LIEPARD,24
+    CHIMECHO,24
+    CHIMECHO,24
+    DRIFLOON,25
+    LIEPARD,25
+    CHIMECHO,25
+    CHIMECHO,25
+    DRIFLOON,26
+    DRIFLOON,26
+    DRIFLOON,27
+    DRIFLOON,27
+#-------------------------------
 028 # Route O-4
 25,10,10
 Land

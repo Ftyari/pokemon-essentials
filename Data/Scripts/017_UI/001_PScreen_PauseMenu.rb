@@ -112,6 +112,7 @@ class PokemonPauseMenu
     cmdDebug    = -1
     cmdQuit     = -1
     cmdReturnHome = -1
+    cmdNightclub = -1
     cmdEndGame  = -1
     commands[cmdPokedex = commands.length]  = _INTL("Pokédex") if $Trainer.pokedex && $PokemonGlobal.pokedexViable.length>0
     commands[cmdPokemon = commands.length]  = _INTL("Pokémon") if $Trainer.party.length>0
@@ -152,6 +153,7 @@ class PokemonPauseMenu
     commands[cmdOption = commands.length]   = _INTL("Options")
     commands[cmdDebug = commands.length]    = _INTL("Debug") if $DEBUG
     commands[cmdReturnHome = commands.length]  = _INTL("Return Home") if $game_switches[70] && !$game_switches[107]
+    commands[cmdNightclub = commands.length]  = _INTL("Noctum Nightclub") if $game_switches[70] && $game_switches[80] && !$game_switches[116]
     commands[cmdEndGame = commands.length]  = _INTL("Quit Game")
     loop do
       command = @scene.pbShowCommands(commands)
@@ -271,6 +273,16 @@ class PokemonPauseMenu
         if pbConfirmMessage(_INTL("Would you like to return home?"))
               @scene.pbEndScene
               pbReturnToPlayerHouse
+              @scene.pbRefresh
+              return
+            else
+              pbShowMenu
+        end
+      elsif  cmdNightclub>=0 && command==cmdNightclub
+        @scene.pbHideMenu
+        if pbConfirmMessage(_INTL("Would you like to go to Noctum Nightclub?"))
+              @scene.pbEndScene
+              pbGoToNightclub
               @scene.pbRefresh
               return
             else

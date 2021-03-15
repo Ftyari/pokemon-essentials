@@ -257,6 +257,15 @@ Events.onWildPokemonCreate+=proc {|sender,e|
    when 62 #Litleo. «Dex Number: 667.»
      pokemon.pbLearnMove(:YAWN)
      pokemon.pbLearnMove(:ENTRAINMENT)
+   when 63 #Corphish-1. «Dex Number: 341.»
+     pokemon.pbLearnMove(:AQUAJET)
+   when 64 #Corphish-2. «Dex Number: 341.»
+     pokemon.pbLearnMove(:DRAGONDANCE)
+   when 65 #Munna. «Dex Number: 517.»
+     pokemon.pbLearnMove(:PSYBEAM)
+     pokemon.pbLearnMove(:MOONLIGHT)
+     pokemon.pbLearnMove(:YAWN)
+     pokemon.pbLearnMove(:HYPNOSIS)
     end
 }
 
