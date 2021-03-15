@@ -22,6 +22,34 @@ BattleHandlers::SpeedCalcAbility.add(:SANDRUSH,
   }
 )
 
+### Modified Abilities by Scyl.
+
+BattleHandlers::SpeedCalcAbility.add(:FLAREBOOST,
+  proc { |ability,battler,mult|
+    next mult*1.5 if battler.burned?
+  }
+)
+
+BattleHandlers::SpeedCalcAbility.add(:LIGHTMETAL,
+  proc { |ability,battler,mult|
+    next mult*1.2
+  }
+)
+
+BattleHandlers::SpeedCalcAbility.add(:RUNAWAY,
+  proc { |ability,battler,mult|
+    next mult*1.2
+  }
+)
+
+BattleHandlers::SpeedCalcAbility.add(:HEAVYMETAL,
+  proc { |ability,battler,mult|
+    next mult*0.8
+  }
+)
+
+###
+
 BattleHandlers::SpeedCalcAbility.add(:SLOWSTART,
   proc { |ability,battler,mult|
     next mult/2 if battler.effects[PBEffects::SlowStart]>0
@@ -772,6 +800,12 @@ BattleHandlers::AccuracyCalcUserAbility.add(:COMPOUNDEYES,
   }
 )
 
+BattleHandlers::AccuracyCalcUserAbility.add(:ILLUMINATE,
+  proc { |ability,mods,user,target,move,type|
+    mods[ACC_MULT] *= 1.2
+  }
+)
+
 BattleHandlers::AccuracyCalcUserAbility.add(:HUSTLE,
   proc { |ability,mods,user,target,move,type|
     mods[ACC_MULT] *= 0.8 if move.physicalMove?
@@ -1183,6 +1217,21 @@ BattleHandlers::DamageCalcTargetAbility.add(:FURCOAT,
     mults[DEF_MULT] *= 2 if move.physicalMove? || move.function=="122"   # Psyshock
   }
 )
+
+###  Heavy Metal/Light Metal Changes.
+
+BattleHandlers::DamageCalcTargetAbility.add(:HEAVYMETAL,
+  proc { |ability,user,target,move,mults,baseDmg,type|
+    mults[DEF_MULT] *= 1.2 if move.physicalMove? || move.function=="122"   # Psyshock
+  }
+)
+
+BattleHandlers::DamageCalcTargetAbility.add(:LIGHTMETAL,
+  proc { |ability,user,target,move,mults,baseDmg,type|
+    mults[DEF_MULT] *= 0.8 if move.physicalMove? || move.function=="122"   # Psyshock
+  }
+)
+###
 
 BattleHandlers::DamageCalcTargetAbility.add(:GRASSPELT,
   proc { |ability,user,target,move,mults,baseDmg,type|
@@ -1929,6 +1978,22 @@ BattleHandlers::EORHealingAbility.add(:SHEDSKIN,
       when PBStatuses::FROZEN
         battle.pbDisplay(_INTL("{1}'s {2} defrosted it!",battler.pbThis,battler.abilityName))
       end
+    end
+    battle.pbHideAbilitySplash(battler)
+  }
+)
+
+### Modified Honey Gather by Scyl.
+
+BattleHandlers::EORHealingAbility.add(:HONEYGATHER,
+  proc { |ability,battler,battle|
+    next if !battler.canHeal?
+    battle.pbShowAbilitySplash(battler)
+    battler.pbRecoverHP(battler.totalhp/8)
+    if PokeBattle_SceneConstants::USE_ABILITY_SPLASH
+      battle.pbDisplay(_INTL("{1}'s HP was restored.",battler.pbThis))
+    else
+      battle.pbDisplay(_INTL("{1}'s {2} restored its HP.",battler.pbThis,battler.abilityName))
     end
     battle.pbHideAbilitySplash(battler)
   }
